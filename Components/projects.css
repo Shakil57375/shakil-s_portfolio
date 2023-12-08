@@ -1,0 +1,46 @@
+
+.container .box{
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+    transition: ease-in-out 8s;
+    background-position: top;
+}
+
+.container .box.box1{
+    background: url(../assets/Projects/Recipe-hunter.png);
+    background-size: cover;
+}
+
+.container .box.box2{
+    background: url(../assets/Projects/Sports-Academy-Home.png);
+    background-size: cover;
+}
+
+.container .box.box3{
+    background: url(../assets/Projects/SportyKidz-Home.png);
+    background-size: cover;
+}
+
+.container .box:hover{
+    background-position: bottom;
+}
+
+.links{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -100%;
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    color: black;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: 0.5s ease-in-out;
+}
+
+.project:hover .links {
+    right: 0;
+}

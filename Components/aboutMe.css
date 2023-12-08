@@ -1,0 +1,64 @@
+.about__image{
+    position: relative;
+}
+
+.about__image_bg{
+    width: 16rem;
+    height: 22rem;
+    position: absolute;
+    background: rgb(0, 153, 153);
+    bottom: 1rem;
+}
+
+.about__image_lg{
+    position: relative;
+    left: 1rem;
+    width: 400px;
+    height: 440px;
+    bottom: 1rem;
+    filter: saturate(0) brightness(0.3);
+    transition: 500ms ease-in;
+}
+
+.about__image_sm{
+    position: absolute;
+    top: 3rem;
+    left: 16rem;
+    overflow: hidden;
+    transition: 500ms ease;
+}
+
+.about__image:hover .about__image_sm{
+    opacity: 0;
+}
+
+.about__image:hover .about__image_lg{
+    filter: saturate(1) brightness(1);
+    border: 0.4rem solid cyan;
+    left: 0;
+    top: 0;
+}
+
+@media screen and (max-width: 1024px){
+    /* ========== About ============= */
+
+
+
+    .about__image_bg, .about__image_sm{
+        display: none;
+    }
+
+    .about__image_lg{
+        left: 0;
+        top: 0;
+        width: 100%;
+        filter: saturate(1) brightness(1);
+    }
+
+    .about__image:hover{
+        border: none;
+    }
+
+
+}
+

@@ -10,7 +10,6 @@ import shakil from "../assets/shakil.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-import Nabvar from "./Nabvar";
 const Banner = () => {
   useEffect(() => {
     AOS.init({
@@ -20,7 +19,6 @@ const Banner = () => {
   const color = "#1e9bff";
   return (
     <section data-aos="fade-zoom-in" className="relative flex flex-col  z-20 paddingX paddingY header">
-      <Nabvar />
       <div className="flex items-center justify-around text-center">
        <div>
        <h1 className="  font-extrabold font-Montserrat tracking-wide">

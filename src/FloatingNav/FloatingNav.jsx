@@ -11,8 +11,7 @@ const FloatingNav = () => {
   const [activeNav, setActiveNav] = useState();
   
   return (
-    <div>
-      <nav className="navbar gap-5 fixed w-full paddingX z-50 top-2 h-16">
+      <nav className="navbar gap-5 fixed paddingX z-50 top-2 h-16 w-11/12 !py-10">
         <div className="navbar-start z-50">
           <Link to="/" className="">
             <img
@@ -78,7 +77,6 @@ const FloatingNav = () => {
           <Button>Let's Talk</Button>
         </div>
       </nav>
-    </div>
   );
 };
 

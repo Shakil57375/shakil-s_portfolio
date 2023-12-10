@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import CV from "../../public/Shakil's_Resume.pdf";
 import { Link } from "react-scroll";
 import "./banner.css";
+import { FaDownload } from "react-icons/fa6";
 import shakil from "../assets/shakil.png";
 const Banner = () => {
   return (
@@ -17,17 +18,22 @@ const Banner = () => {
             SHAKIL
           </p>
           <p className="text-8xl font-extrabold font-Montserrat">HOSSAIN</p>
-          <div className="mt-10 border-r-0 border-t-0 border-b-0 border-l-1 pl-8 py-2 border text-xl font-semibold text-gray-500">
-            <p>I am MERN-stack</p>
-            <p>developer work remotely</p>
-            <p>from Bangladesh</p>
-          </div>
-          <div className="my-5">
-            <button>
-              <a href={CV} download className="cursor-pointer ">
-                Download Resume
+          <div className="mt-10 border-r-0 border-t-0 border-b-0 border-l-1 pl-8 py-2 border text-xl font-semibold text-gray-500 flex justify-between gap-20 items-start">
+            <div>
+              <p>I am MERN-stack</p>
+              <p>developer work remotely</p>
+              <p>from Bangladesh</p>
+            </div>
+            <div className="my-5 text-white">
+              <a
+                href={CV}
+                download
+                className="cursor-pointer bg-pink-700 flex flex-col  py-4 px-8 pulse-anim play-icon items-center gap-1"
+              >
+                <FaDownload className="text-3xl" />
+                <p className="text-3xl font-bold">CV</p>
               </a>
-            </button>
+            </div>
           </div>
         </div>
         <div className="">

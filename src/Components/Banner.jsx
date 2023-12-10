@@ -1,87 +1,35 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
-import Typical from "react-typical";
 import { motion } from "framer-motion";
+import CV from "../../public/Shakil's_Resume.pdf";
 import { Link } from "react-scroll";
 import "./banner.css";
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
-import CV from "../../public/Shakil's_Resume.pdf";
 import shakil from "../assets/shakil.png";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
 const Banner = () => {
-  useEffect(() => {
-    AOS.init({
-      duration:1200,
-    });
-  }, []);
-  const color = "#1e9bff";
   return (
-    <section data-aos="fade-zoom-in" className="relative flex flex-col  z-20 paddingX paddingY header">
-      <div className="flex items-center justify-around text-center">
-       <div>
-       <h1 className="  font-extrabold font-Montserrat tracking-wide">
-          Welcome, I am
-          <p className="text-[#25cdca] lg:text-7xl text-5xl font-Montserrat">
-            Shakil
+    <section className="relative text-white flex flex-col z-20 paddingX paddingY header">
+      <div className="flex mt-24 items-center justify-between paddingX ">
+        <div className="flex flex-col  items-start">
+          <h1 className="font-semibold text-gray-500 text-3xl">
+            MERN-stack developer
+          </h1>
+          <p className="text-8xl font-extrabold font-Montserrat mt-8 mb-1">
+            SHAKIL
           </p>
-        </h1>
-        <p className="flex flex-col text-2xl font-bold tracking-widest gap-1">
-          <span className="">I am a </span>
-
-          <Typical
-            loop={Infinity}
-            className=""
-            wrapper="b"
-            steps={["Developer", 5000, "Designer", 5000, "learner", 5000]}
-          />
-        </p>
-
-        <div className="flex mt-5 justify-center gap-8">
-        <span>
-            <a
-              href="https://www.linkedin.com/in/shakil-hossian-757817263/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedin className="w-7 h-7 text-blue-500"></FaLinkedin>
-            </a>
-          </span>
-          <span>
-            <a
-              href="https://github.com/Shakil57375"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub className="w-7 h-7 text-black"></FaGithub>
-            </a>
-          </span>
-          
-          <span>
-            <a
-              href="https://web.facebook.com/profile.php?id=100056182026221"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaFacebook className="w-7 h-7 text-blue-500"></FaFacebook>
-            </a>
-          </span>
-          
-        <div className="my-5">
-          <button>
-            <a
-              href={CV}
-              download
-              className="cursor-pointer "
-              style={{ "--clr": color }}
-            >
-              <span>Download Resume</span> <i></i>
-            </a>
-          </button>
+          <p className="text-8xl font-extrabold font-Montserrat">HOSSAIN</p>
+          <div className="mt-10 border-r-0 border-t-0 border-b-0 border-l-1 pl-8 py-2 border text-xl font-semibold text-gray-500">
+            <p>I am MERN-stack</p>
+            <p>developer work remotely</p>
+            <p>from Bangladesh</p>
+          </div>
+          <div className="my-5">
+            <button>
+              <a href={CV} download className="cursor-pointer ">
+                Download Resume
+              </a>
+            </button>
+          </div>
         </div>
-        </div>
-       </div>
         <div className="">
           <img
             className="mb-20 bg-gradient-to-t overflow-hidden from-transparent to-cyan-500 px-10 pt-10  rounded-tr-full rounded-tl-full rounded-br-none rounded-bl-none mx-auto h-64"

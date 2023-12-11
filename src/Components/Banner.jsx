@@ -46,10 +46,10 @@ const Banner = () => {
             </div>
           </div>
           <div className="">
-            <div className="box relative z-1 top-20"></div>
+            <div className="box relative z-0 top-20"></div>
             <img
               src="https://i.ibb.co/HrXCPtB/shakil-banner-image.png"
-              className=" z-10 absolute translate-x-10 -translate-y-3/4 top-3/4 h-[600px] mt-8"
+              className=" z-0 absolute translate-x-10 -translate-y-3/4 top-3/4 h-[600px] mt-8"
               alt=""
             />
           </div>

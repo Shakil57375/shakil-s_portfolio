@@ -4,22 +4,15 @@ import ScrollTrigger from "react-scroll-trigger";
 import aboutImage from "../../src/assets/shakil_about_image.jpg";
 import { useState } from "react";
 import SectionTitle from "../Utils/SectionTitle";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
 const AboutMe = () => {
   const [counterOn, setCounterOn] = useState(false);
-  useEffect(() => {
-    AOS.init({
-      duration:1200,
-    });
-  }, []);
+  
   return (
-    <section  data-aos="fade-zoom-in" id="about">
-      <div className="mb-20">
+    <section id="about" className="bg-black z-40 overflow-auto">
+      <div className="mb-20 z-40">
         <SectionTitle title={"About Me"}></SectionTitle>
       </div>
-      <div className="flex  lg:flex-row flex-col justify-between  items-start gap-5 p-0 md:px-20 paddingY">
+      <div className="flex z-40 lg:flex-row flex-col justify-between  items-start gap-5 p-0 md:px-20 paddingY">
         <div className="lg:basis-6/12 basis-full">
           <div className="pl-0 lg:pl-24 about__image relative">
             <div className="about__image_bg"></div>

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./GradientBackground.css";
 const GradientBackground = ({className}) => {
   return (

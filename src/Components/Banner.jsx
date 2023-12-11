@@ -5,11 +5,15 @@ import { Link } from "react-scroll";
 import { MdOutlineHorizontalRule } from "react-icons/md";
 import "./banner.css";
 import { FaDownload } from "react-icons/fa6";
+import { FaLongArrowAltDown  } from "react-icons/fa";
 import GradientBackground from "./GradientBackground";
+import Social from "./Social";
 const Banner = () => {
   return (
-    <div className="header">
-      <GradientBackground className={`top-10 -right-60`} />
+    <div className="header flex items-center justify-between">
+      <GradientBackground className={`top-10 -right-60 bg-blue-800`} />
+      <GradientBackground className={`top-56 -right-48 bg-pink-800`} />
+      <GradientBackground className={`top-[400px] -right-48 bg-pink-300`} />
       <div className="flex flex-col gap-2 text-white absolute top-1/3">
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
@@ -18,7 +22,7 @@ const Banner = () => {
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
       </div>
       <section className="text-white flex flex-col z-20 paddingX paddingY">
-        <div className="flex mt-24 items-center justify-between paddingX ">
+        <div className="flex mt-24 items-center justify-between paddingX gap-56">
           <div className="flex flex-col  items-start">
             <h1 className="font-semibold text-gray-500 text-3xl">
               MERN-stack developer
@@ -62,6 +66,10 @@ const Banner = () => {
           </div>
         </div>
       </section>
+      <div className="relative right-12 flex flex-col items-center">
+        <FaLongArrowAltDown  className="text-xl text-white animate-bounce h-6" />
+        <Social />
+      </div>
     </div>
   );
 };

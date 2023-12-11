@@ -1,17 +1,14 @@
-
 .glow-bg-2 {
-    height: 300px;
-    filter: blur(50px);
-    opacity: 0.4;
-    transition: filter 0.25s ease-in-out, opacity 0.25s ease-in-out;
-    transform-origin: center center;
-    background-image: linear-gradient(
+  height: 300px;
+  filter: blur(50px);
+  opacity: 0.4;
+  transition: filter 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  transform-origin: center center;
+  /* background-image: linear-gradient(
       to right top,
       #6c22bd,
       #8b25bb,
       #a52bb9,
-    );
-    border-radius: 50%;
-
-  }
-  
+    ); */
+  border-radius: 50%;
+}

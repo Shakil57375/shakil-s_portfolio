@@ -5,9 +5,11 @@ import { Link } from "react-scroll";
 import { MdOutlineHorizontalRule } from "react-icons/md";
 import "./banner.css";
 import { FaDownload } from "react-icons/fa6";
+import GradientBackground from "./GradientBackground";
 const Banner = () => {
   return (
     <div className="header">
+      <GradientBackground className={`top-10 -right-60`} />
       <div className="flex flex-col gap-2 text-white absolute top-1/3">
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
@@ -45,7 +47,11 @@ const Banner = () => {
           </div>
           <div className="">
             <div className="box relative z-1 top-20"></div>
-            <img src="https://i.ibb.co/HrXCPtB/shakil-banner-image.png" className=" z-10 absolute translate-x-10 -translate-y-3/4 top-3/4 h-[600px] mt-8" alt="" />
+            <img
+              src="https://i.ibb.co/HrXCPtB/shakil-banner-image.png"
+              className=" z-10 absolute translate-x-10 -translate-y-3/4 top-3/4 h-[600px] mt-8"
+              alt=""
+            />
           </div>
           <div className="absolute xs:bottom-10 bottom-[60px] right-0 w-full flex justify-center items-center">
             <Link to="about">

@@ -48,7 +48,7 @@ const Social = () => {
       </span>
       <span>
         <a
-          href="https://web.facebook.com/profile.php?id=100056182026221"
+          href="https://www.instagram.com/shakil57375/"
           target="_blank"
           rel="noreferrer"
         >

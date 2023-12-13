@@ -4,8 +4,9 @@ import CV from "../../public/Shakil's_Resume.pdf";
 import { Link } from "react-scroll";
 import { MdOutlineHorizontalRule } from "react-icons/md";
 import "./banner.css";
+import { ImCross } from "react-icons/im";
 import { FaDownload } from "react-icons/fa6";
-import { FaLongArrowAltDown  } from "react-icons/fa";
+import { FaLongArrowAltDown } from "react-icons/fa";
 import GradientBackground from "./GradientBackground";
 import Social from "./Social";
 const Banner = () => {
@@ -50,6 +51,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="">
+            <ImCross className="text-3xl" />
             <div className="box relative z-0 top-20"></div>
             <img
               src="https://i.ibb.co/HrXCPtB/shakil-banner-image.png"
@@ -60,14 +62,14 @@ const Banner = () => {
           <div className="absolute xs:bottom-10 bottom-[60px] right-0 w-full flex justify-center items-center">
             <Link to="about">
               <div className="w-[30px] h-[48px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 cursor-pointer">
-                <div className="w-[10px] h-[10px] rounded-full bg-secondary mb-1" />
+                <div className="w-[10px] h-[10px] rounded-full bg-secondary mb-1 animate-bounce" />
               </div>
             </Link>
           </div>
         </div>
       </section>
       <div className="relative right-12 flex flex-col items-center">
-        <FaLongArrowAltDown  className="text-xl text-white animate-bounce h-6" />
+        <FaLongArrowAltDown className="text-xl text-white animate-bounce h-6" />
         <Social />
       </div>
     </div>

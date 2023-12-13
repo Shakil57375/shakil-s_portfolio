@@ -17,6 +17,7 @@ button a {
   background-position: center;
   background-size: cover;
   position: relative;
+  z-index: 1;
 }
 
 .play-icon {

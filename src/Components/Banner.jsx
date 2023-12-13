@@ -52,10 +52,10 @@ const Banner = () => {
           </div>
           <div className="">
             <ImCross className="text-3xl" />
-            <div className="box relative z-0 top-20"></div>
+            <div className="box relative z-0 top-24 right-8"></div>
             <img
               src="https://i.ibb.co/HrXCPtB/shakil-banner-image.png"
-              className=" z-0 absolute translate-x-10 -translate-y-3/4 top-3/4 h-[600px] mt-8"
+              className=" z-0 absolute translate-x-10 -translate-y-3/4 top-3/4 h-[650px] mt-8"
               alt=""
             />
           </div>
@@ -68,7 +68,7 @@ const Banner = () => {
           </div>
         </div>
       </section>
-      <div className="relative right-12 flex flex-col items-center">
+      <div className="relative right-24 flex flex-col items-center">
         <FaLongArrowAltDown className="text-xl text-white animate-bounce h-6" />
         <Social />
       </div>

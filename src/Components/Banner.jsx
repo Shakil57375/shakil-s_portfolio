@@ -11,7 +11,7 @@ import GradientBackground from "./GradientBackground";
 import Social from "./Social";
 const Banner = () => {
   return (
-    <div className="header flex items-center justify-between">
+    <div className="header flex items-center justify-between !z-10">
       <GradientBackground className={`top-10 -right-60 bg-blue-800`} />
       <GradientBackground className={`top-56 -right-48 bg-pink-800`} />
       <GradientBackground className={`top-[400px] -right-48 bg-pink-300`} />

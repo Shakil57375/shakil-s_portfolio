@@ -8,7 +8,7 @@ const AboutMe = () => {
   const [counterOn, setCounterOn] = useState(false);
   
   return (
-    <section id="about" className="bg-black z-40 overflow-auto">
+    <section id="about" className="bg-black z-40 relative">
       <div className="mb-20 z-40">
         <SectionTitle title={"About Me"}></SectionTitle>
       </div>

@@ -1,7 +1,6 @@
 import Banner from "./Banner";
 import AboutMe from "./AboutMe";
 import Services from "./Services";
-import Skills from "./Skills";
 import FloatingNav from "../FloatingNav/FloatingNav";
 import Projects from "./Projects";
 import Contact from "./Contact";
@@ -15,7 +14,6 @@ const Main = () => {
         <Banner />
         <AboutMe />
         <Services/>
-        <Skills/>
         <Projects/>
         <Contact/>
         <BottomToTop/>

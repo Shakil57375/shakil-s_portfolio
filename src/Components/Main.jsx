@@ -9,14 +9,13 @@ import BottomToTop from "./BottomToTop";
 const Main = () => {
   return (
     <div className="">
-        
-        <FloatingNav/>
-        <Banner />
-        <AboutMe />
-        <Services/>
-        <Projects/>
-        <Contact/>
-        <BottomToTop/>
+      <FloatingNav />
+      <Banner />
+      <AboutMe />
+      <Services />
+      <Projects />
+      <Contact />
+      <BottomToTop />
     </div>
   );
 };

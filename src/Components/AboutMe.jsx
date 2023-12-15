@@ -14,22 +14,12 @@ const AboutMe = () => {
       </div>
       <div className="flex z-40 lg:flex-row flex-col justify-between  items-start gap-5 p-0 md:px-20 paddingY">
         <div className="lg:basis-6/12 basis-full">
-          <div className="pl-0 lg:pl-24 about__image relative">
-            <div className="about__image_bg"></div>
-            <div className="about__image_lg">
+          <div className=" relative">
               <img
-                className="lg:w-[400px] w-full  h-[428px]"
+                className="about__image "
                 src={aboutImage}
                 alt="About Shakil"
               />
-            </div>
-            <div className="about__image_sm">
-              <img
-                className=" w-[300px] h-[300px]"
-                src={aboutImage}
-                alt="About Shakil"
-              />
-            </div>
           </div>
         </div>
         <div className="lg:basis-6/12 basis-full lg:p-0 px-8">

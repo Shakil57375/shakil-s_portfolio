@@ -9,7 +9,6 @@ import { FaDownload } from "react-icons/fa6";
 import { FaLongArrowAltDown } from "react-icons/fa";
 import GradientBackground from "./GradientBackground";
 import Social from "./Social";
-import BallCanvas from "./BallCanvas";
 const Banner = () => {
   return (
     <div className="header flex items-center justify-between !z-10">
@@ -59,7 +58,6 @@ const Banner = () => {
               className=" z-0 absolute translate-x-10 -translate-y-3/4 top-3/4 h-[650px] mt-8"
               alt=""
             />
-            <BallCanvas />
           </div>
           <div className="absolute xs:bottom-10 bottom-[60px] right-0 w-full flex justify-center items-center">
             <Link to="about">

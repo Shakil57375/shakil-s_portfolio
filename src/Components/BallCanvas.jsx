@@ -43,8 +43,8 @@ const GradientShaderMaterial = shaderMaterial(
 extend({ GradientShaderMaterial });
 
 const Ball = () => {
-  const color1 = new THREE.Color("#daf73b");
-  const color2 = new THREE.Color("#ff5500"); // Change this color as needed
+  const color1 = new THREE.Color("#00ccff");
+  const color2 = new THREE.Color("#d400d4"); // Change this color as needed
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>

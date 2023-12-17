@@ -13,14 +13,15 @@ const AboutMe = () => {
         <SectionTitle title={"About Me"}></SectionTitle>
       </div>
       <div className="flex z-40 lg:flex-row flex-col justify-between  items-start gap-5 p-0 md:px-20 paddingY">
-        <div className="lg:basis-6/12 basis-full">
-          <div className=" relative">
+        <div className="lg:basis-6/12 basis-full z-30">
+          <div className="relative z-30">
               <img
-                className="about__image "
+                className="about__image"
                 src={aboutImage}
                 alt="About Shakil"
               />
           </div>
+          <div className="relative -top-[470px] -right-8 z-10  about_bg_shape"></div>
         </div>
         <div className="lg:basis-6/12 basis-full lg:p-0 px-8">
           <div>

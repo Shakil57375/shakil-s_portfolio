@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <div className="">
       <FloatingNav />
-      <Banner />
+      {/* <Banner /> */}
       <AboutMe />
       <Services />
       <Projects />

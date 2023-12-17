@@ -6,20 +6,18 @@ import { useState } from "react";
 import SectionTitle from "../Utils/SectionTitle";
 const AboutMe = () => {
   const [counterOn, setCounterOn] = useState(false);
-  
+
   return (
     <section id="about" className="bg-black z-40 relative">
-      <div className="mb-20 z-40">
-        <SectionTitle title={"About Me"}></SectionTitle>
-      </div>
+        <SectionTitle
+          divClassName={`flex  relative top-20 text-cyan-600 justify-center`}
+          titleFirstWord={"About"}
+          titleSecondWord={"Me"}
+        ></SectionTitle>
       <div className="flex z-40 lg:flex-row flex-col justify-between  items-start gap-5 p-0 md:px-20 paddingY">
         <div className="lg:basis-6/12 basis-full z-30">
           <div className="relative z-30">
-              <img
-                className="about__image"
-                src={aboutImage}
-                alt="About Shakil"
-              />
+            <img className="about__image" src={aboutImage} alt="About Shakil" />
           </div>
           <div className="relative -top-[470px] -right-8 z-10  about_bg_shape"></div>
         </div>

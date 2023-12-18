@@ -4,13 +4,13 @@ import ScrollTrigger from "react-scroll-trigger";
 import aboutImage from "../../src/assets/shakil_about_image.jpg";
 import { useState } from "react";
 import SectionTitle from "../Utils/SectionTitle";
-import BallCanvas from "./BallCanvas";
+import GradientBackground from "./GradientBackground";
 const AboutMe = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
     <section id="about" className="bg-black z-40 relative">
       <SectionTitle
-        divClassName={`flex flex-col relative top-44 right-48 text-white justify-start items-center`}
+        divClassName={`flex flex-col relative top-44 right-48 text-white justify-start items-center z-50`}
         titleFirstWord={"About"}
         titleSecondWord={"Me"}
         titleFirstClassName={
@@ -20,20 +20,17 @@ const AboutMe = () => {
           "text-8xl font-bold paddingX relative font-bold text-center z-40 font-Montserrat"
         }
       ></SectionTitle>
-      <div className="flex z-40 lg:flex-row flex-col items-start justify-between paddingY paddingX h-[550px] w-full gap-48">
-        <BallCanvas />
+      <div className="flex z-40 lg:flex-row flex-col items-start justify-between paddingY paddingX h-[650px] w-full gap-48 relative">
         <div className=" z-30">
+          <GradientBackground className={`absolute top-80 left-4 bg-blue-800`} />
           <div className="relative z-30">
             <img className="about__image" src={aboutImage} alt="About Shakil" />
           </div>
           <div className="relative -top-[470px] -right-8 z-10  about_bg_shape"></div>
         </div>
-        <div className=" lg:p-0">
+        <div className=" lg:p-0 text-white">
           <div>
-            <h1 className="text-2xl font-medium block">
-              I am a Front End Developer
-            </h1>
-            <p className="text-base font-normal font-Poppins mt-3">
+            <p className="text-sm font-mono mt-3">
               I am an expert in Html, CSS, Javascript, Es6, react.js, bootstrap,
               react-bootstrap, tailwind css, and daisyUi. I am comfortable with
               Mongodb, react hook form, express.js, and Firebase authentication.

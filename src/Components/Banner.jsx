@@ -12,9 +12,9 @@ import Social from "./Social";
 const Banner = () => {
   return (
     <div className="header flex items-center justify-between !z-10">
-      <GradientBackground className={`top-10 -right-60 bg-blue-800`} />
-      <GradientBackground className={`top-56 -right-48 bg-pink-800`} />
-      <GradientBackground className={`top-[400px] -right-48 bg-pink-300`} />
+      <GradientBackground className={`absolute top-10 -right-60 bg-blue-800`} />
+      <GradientBackground className={`absolute top-56 -right-48 bg-pink-800`} />
+      <GradientBackground className={`absolute top-[400px] -right-48 bg-pink-300`} />
       <div className="flex flex-col gap-2 text-white absolute top-1/3">
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />

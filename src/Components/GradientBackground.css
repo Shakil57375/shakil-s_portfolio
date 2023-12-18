@@ -1,5 +1,6 @@
 .glow-bg-2 {
   height: 300px;
+  width: 400px;
   filter: blur(50px);
   opacity: 0.4;
   transition: filter 0.25s ease-in-out, opacity 0.25s ease-in-out;

@@ -45,7 +45,7 @@ const AboutMe = () => {
           </div>
           <div>
             <GradientBackground
-              className={"absolute top-0 -right-80 bg-pink-600 blur-[120px] w-[500px]"}
+              className={"absolute top-60 -right-48 bg-rose-800 blur-[120px] w-[400px] opacity-80 h-40"}
             />
 
             <ScrollTrigger

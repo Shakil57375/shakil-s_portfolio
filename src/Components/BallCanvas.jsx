@@ -1,18 +1,10 @@
 /* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/no-unknown-property */
-import { Suspense } from "react";
-import { Canvas, extend } from "@react-three/fiber";
+import { Float } from "@react-three/drei";
+import { shaderMaterial } from "@react-three/drei";
+import { extend } from "react-three-fiber";
 import * as THREE from "three"; // Add this line to import THREE
-
-
-import {
-  Float,
-  OrbitControls,
-  Preload,
-  shaderMaterial,
-} from "@react-three/drei";
-
-import CanvasLoader from "./Loader";
 const GradientShaderMaterial = shaderMaterial(
   { time: 0, color1: new THREE.Color(), color2: new THREE.Color() },
   `
@@ -42,9 +34,9 @@ const GradientShaderMaterial = shaderMaterial(
 
 extend({ GradientShaderMaterial });
 
-const Ball = () => {
-  const color1 = new THREE.Color("#00ccff");
-  const color2 = new THREE.Color("#d400d4"); // Change this color as needed
+const Ball = (props) => {
+  const color1 = new THREE.Color("#daf73b");
+  const color2 = new THREE.Color("#ff5500"); // Change this color as needed
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -61,6 +53,7 @@ const Ball = () => {
     </Float>
   );
 };
+
 
 
 const BallCanvas = ({ icon }) => {

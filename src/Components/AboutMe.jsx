@@ -4,6 +4,7 @@ import ScrollTrigger from "react-scroll-trigger";
 import aboutImage from "../../src/assets/shakil_about_image.jpg";
 import { useState } from "react";
 import SectionTitle from "../Utils/SectionTitle";
+import BallCanvas from "./BallCanvas";
 const AboutMe = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
@@ -19,7 +20,8 @@ const AboutMe = () => {
           "text-8xl font-bold paddingX relative font-bold text-center z-40 font-Montserrat"
         }
       ></SectionTitle>
-      <div className="flex z-40 lg:flex-row flex-col items-start justify-between paddingY paddingX h-[550px] w-full gap-40">
+      <div className="flex z-40 lg:flex-row flex-col items-start justify-between paddingY paddingX h-[550px] w-full gap-48">
+        <BallCanvas />
         <div className=" z-30">
           <div className="relative z-30">
             <img className="about__image" src={aboutImage} alt="About Shakil" />

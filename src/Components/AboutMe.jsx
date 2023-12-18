@@ -22,13 +22,15 @@ const AboutMe = () => {
       ></SectionTitle>
       <div className="flex z-40 lg:flex-row flex-col items-start justify-between paddingY paddingX h-[650px] w-full gap-48 relative">
         <div className=" z-30">
-          <GradientBackground className={`absolute top-80 left-4 bg-blue-800`} />
+          <GradientBackground
+            className={`absolute top-80 left-4 bg-blue-800 blur-3xl w-96 h-80 opacity-40`}
+          />
           <div className="relative z-30">
             <img className="about__image" src={aboutImage} alt="About Shakil" />
           </div>
           <div className="relative -top-[470px] -right-8 z-10  about_bg_shape"></div>
         </div>
-        <div className=" lg:p-0 text-white">
+        <div className=" lg:p-0 text-white relative">
           <div>
             <p className="text-sm font-mono mt-3">
               I am an expert in Html, CSS, Javascript, Es6, react.js, bootstrap,
@@ -42,6 +44,10 @@ const AboutMe = () => {
             </p>
           </div>
           <div>
+            <GradientBackground
+              className={"absolute top-0 -right-80 bg-pink-600 blur-[120px] w-[500px]"}
+            />
+
             <ScrollTrigger
               onEnter={() => setCounterOn(true)}
               onExit={() => setCounterOn(false)}

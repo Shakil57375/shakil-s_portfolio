@@ -5,6 +5,7 @@ import aboutImage from "../../src/assets/shakil_about_image.jpg";
 import { useState } from "react";
 import SectionTitle from "../Utils/SectionTitle";
 import GradientBackground from "./GradientBackground";
+import Button from "./Button";
 const AboutMe = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
@@ -45,7 +46,14 @@ const AboutMe = () => {
           </div>
           <div>
             <GradientBackground
-              className={"absolute top-60 -right-48 bg-rose-800 blur-[120px] w-[400px] opacity-80 h-40"}
+              className={
+                "absolute -top-60 -right-40 bg-violet-600 blur-[150px] w-[400px] opacity-40 h-96 -skew-y-[45deg]"
+              }
+            />
+            <GradientBackground
+              className={
+                "absolute top-60 -right-48 bg-rose-800 blur-[120px] w-[400px] opacity-80 h-40"
+              }
             />
 
             <ScrollTrigger
@@ -85,6 +93,44 @@ const AboutMe = () => {
                 </div>
               </div>
             </ScrollTrigger>
+            <div className="flex items-center justify-between mt-10">
+              <Button>Talk with me!</Button>
+              <div className="flex flex-col gap-4 ">
+                <div className="flex gap-4">
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

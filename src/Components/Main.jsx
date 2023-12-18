@@ -10,6 +10,7 @@ const Main = () => {
   return (
     <div className="">
       <FloatingNav />
+      {/* //Todo : uncomment banner */}
       {/* <Banner /> */}
       <AboutMe />
       <Services />

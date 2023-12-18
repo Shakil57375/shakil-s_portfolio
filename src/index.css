@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    background-color: #000;
+}
+
 .paddingX {
    @apply sm:px-28 px-6
 }

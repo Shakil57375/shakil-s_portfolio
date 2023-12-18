@@ -1,0 +1,17 @@
+.arrow-container {
+  position: relative;
+  width: 50px; /* Set the width of the arrow container */
+  height: 30px; /* Set the height of the arrow container */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 14px solid #fff; /* Set the color of the arrow */
+  transform: translateY(-50%);
+}

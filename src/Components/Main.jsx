@@ -1,10 +1,10 @@
 import Banner from "./Banner";
 import AboutMe from "./AboutMe";
-import Services from "./Services";
 import FloatingNav from "../FloatingNav/FloatingNav";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import BottomToTop from "./BottomToTop";
+import Skills from "./Skills";
 
 const Main = () => {
   return (
@@ -12,10 +12,10 @@ const Main = () => {
       <FloatingNav />
       {/* //Todo : uncomment banner */}
       {/* <Banner /> */}
-      <AboutMe />
-      <Services />
-      <Projects />
-      <Contact />
+      {/* <AboutMe /> */}
+      <Skills />
+      {/* <Projects /> */}
+      {/* <Contact /> */}
       <BottomToTop />
     </div>
   );

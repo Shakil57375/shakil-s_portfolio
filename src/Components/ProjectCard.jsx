@@ -23,7 +23,7 @@ const ProjectCard = ({
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div ref={container} className="cardContainer">
+    <div ref={container} className="cardContainer text-white">
       <motion.div
         style={{
           backgroundColor: color,

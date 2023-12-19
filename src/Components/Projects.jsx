@@ -36,6 +36,46 @@ const Projects = () => {
           }
         />
         <ImCross className="text-6xl absolute top-40 right-16 text-white" />
+        <GradientBackground
+          className={`absolute top-80 left-4 bg-blue-800 blur-3xl w-96 h-80 opacity-40`}
+        />
+        <div className="flex flex-col gap-4 absolute top-96 left-36">
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+        </div>
       </div>
       <main ref={container} className="relative mt-32">
         {projects.map((project, i) => {

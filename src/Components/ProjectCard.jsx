@@ -3,7 +3,6 @@ import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import "./ProjectCard.css";
 import { FaEye, FaGithub } from "react-icons/fa";
-import { MdOutlineLiveTv } from "react-icons/md";
 const ProjectCard = ({
   i,
   title,
@@ -50,7 +49,7 @@ const ProjectCard = ({
             </div>
             <div className="flex gap-5">
               <a target="_blank" href={liveLink} rel="noreferrer">
-                <MdOutlineLiveTv className=" w-8 h-8 " />
+                <FaEye className=" w-8 h-8 " />
               </a>
               <a target="_blank" rel="noreferrer" href={github}>
                 <FaGithub className="w-8 h-8" />

@@ -21,7 +21,7 @@ const AboutMe = () => {
           "text-8xl font-bold paddingX relative font-bold text-center z-40 font-Montserrat"
         }
       ></SectionTitle>
-      <div className="flex z-40 lg:flex-row flex-col items-start justify-between paddingY paddingX h-[650px] w-full gap-48 relative">
+      <div className="flex z-40 lg:flex-row flex-col items-start justify-between paddingY paddingX h-[600px] w-full gap-48 relative">
         <div className=" z-30">
           <GradientBackground
             className={`absolute top-80 left-4 bg-blue-800 blur-3xl w-96 h-80 opacity-40`}

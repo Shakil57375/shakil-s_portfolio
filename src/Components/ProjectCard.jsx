@@ -5,6 +5,7 @@ import "./ProjectCard.css";
 const ProjectCard = ({
   i,
   title,
+  workingMnt,
   description,
   src,
   url,
@@ -32,7 +33,10 @@ const ProjectCard = ({
         }}
         className="card"
       >
-        <h2>{title}</h2>
+        <div className="flex flex-col items-center justify-center">
+          <h2 className="text-3xl font-semibold">{title}</h2>
+          <p className="text-xl ">{workingMnt}</p>
+        </div>
         <div className="body">
           <div className="description">
             <p>{description}</p>

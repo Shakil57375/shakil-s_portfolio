@@ -19,11 +19,6 @@
   transform-origin: top;
 }
 
-.card h2 {
-  text-align: center;
-  margin: 0px;
-  font-size: 28px;
-}
 
 .card .body {
   display: flex;
@@ -70,7 +65,7 @@
 .screen {
   display: block;
   width: 520px;
-  height: 350px;
+  height: 300px;
   overflow: hidden;
   position: relative;
   border: 2px solid #b3b3b3;

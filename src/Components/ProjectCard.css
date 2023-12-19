@@ -29,30 +29,8 @@
 
 .card .body .description {
   width: 40%;
-  position: relative;
-  top: 10%;
 }
 
-.card .body .description p {
-  font-size: 16px;
-}
-
-.card .body .description p::first-letter {
-  font-size: 28px;
-  font-family: "Title";
-}
-
-.card .body .description span {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.card .body .description span a {
-  font-size: 12px;
-  text-decoration: underline;
-  cursor: pointer;
-}
 
 .card .body .imageContainer {
   position: relative;

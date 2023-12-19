@@ -2,6 +2,8 @@
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import "./ProjectCard.css";
+import { FaEye, FaGithub } from "react-icons/fa";
+import { MdOutlineLiveTv } from "react-icons/md";
 const ProjectCard = ({
   i,
   title,
@@ -12,6 +14,8 @@ const ProjectCard = ({
   progress,
   technologies,
   range,
+  github,
+  liveLink,
   targetScale,
 }) => {
   const container = useRef(null);
@@ -38,11 +42,19 @@ const ProjectCard = ({
           <p className="text-xl ">{workingMnt}</p>
         </div>
         <div className="body">
-          <div className="description">
-            <p>{description}</p>
+          <div className="description flex flex-col gap-7">
+            <p className="text-base">{description}</p>
             <div className="">
-              <h1 className="font-semibold">Technologies : </h1>
-              <span>{technologies}</span>
+              <h1 className="font-semibold text-lg">Technologies : </h1>
+              <span className="text-base ">{technologies}</span>
+            </div>
+            <div className="flex gap-5">
+              <a target="_blank" href={liveLink} rel="noreferrer">
+                <MdOutlineLiveTv className=" w-8 h-8 " />
+              </a>
+              <a target="_blank" rel="noreferrer" href={github}>
+                <FaGithub className="w-8 h-8" />
+              </a>
             </div>
           </div>
           <div className="imageContainer">
@@ -51,7 +63,6 @@ const ProjectCard = ({
             </motion.div>
           </div>
         </div>
-        
       </motion.div>
     </div>
   );

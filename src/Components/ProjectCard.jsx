@@ -56,8 +56,8 @@ const ProjectCard = ({
           </div>
 
           <div className="imageContainer">
-            <motion.div className="inner" style={{ scale: imageScale }}>
-              <img src={`../../public/images/${src}`} alt="image" />
+            <motion.div className="screen" style={{ scale: imageScale }}>
+              <img src={src} alt="image" />
             </motion.div>
           </div>
         </div>

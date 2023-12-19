@@ -34,7 +34,7 @@ const ProjectCard = ({
       >
         <h2>{title}</h2>
         <div className="body">
-          <div className={description}>
+          <div className="description">
             <p>{description}</p>
             <span>
               <a href={url} target="_blank" rel="noreferrer">

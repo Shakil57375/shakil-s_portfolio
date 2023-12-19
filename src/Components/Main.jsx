@@ -12,7 +12,7 @@ const Main = () => {
       <FloatingNav />
       {/* //Todo : uncomment banner */}
       {/* <Banner /> */}
-      <AboutMe />
+      {/* <AboutMe /> */}
       <Skills />
       {/* <Projects /> */}
       {/* <Contact /> */}

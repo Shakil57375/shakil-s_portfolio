@@ -15,7 +15,7 @@ const Main = () => {
       {/* <Banner /> */}
       {/* <AboutMe /> */}
       <Skills />
-      <Projects />
+      {/* <Projects /> */}
       <Blogs />
       {/* <Contact /> */}
       <BottomToTop />

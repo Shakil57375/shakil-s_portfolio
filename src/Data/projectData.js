@@ -1,11 +1,11 @@
 export const projects = [
   {
     title: "The Universal News",
-    workingMnt: "Sep-Oct 2023",
+    workingMnt: "Sep-Oct 2023 (team project)",
     description:
       "This is a recipe website featuring top-rated chefs and their recipes from Bangladesh. To access the best chefs' recipes, you'll need to log in. On a chef's details page, you'll find in-depth information about the chef and their recipes.",
     src: "https://i.ibb.co/RSg1yQ6/The-Universal-News.png",
-    technologies: "react, express.js, tailwind, css",
+    technologies: "Next.js, Tailwind CSS, MongoDB, Stripe",
     link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
     color: "rgb(15 118 110)",
     github: "https://github.com/mthtitumir/the-universal-news",

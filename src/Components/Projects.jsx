@@ -80,39 +80,39 @@ const Projects = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4 absolute top-[1250px] right-10">
-        <div className="flex gap-4">
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
         </div>
       </div>
       <main ref={container} className="relative mt-32">

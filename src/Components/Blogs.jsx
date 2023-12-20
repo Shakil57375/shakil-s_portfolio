@@ -3,6 +3,8 @@ import { blogs } from "../Data/BlogsData";
 import { useState } from "react";
 import BlogCard from "./BlogCard";
 import Button from "./Button";
+import GradientBackground from "./GradientBackground";
+import { FaXmark } from "react-icons/fa6";
 
 const Blogs = () => {
   const [visibleBlogs, setVisibleBlogs] = useState(4);
@@ -20,12 +22,24 @@ const Blogs = () => {
   };
 
   return (
-    <div className="paddingX paddingY relative">
-      <SectionTitle
-        titleFirstWord={"My Blogs"}
-        titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
-        divClassName={"left-28 flex justify-start "}
-      ></SectionTitle>
+    <div className="paddingX paddingY relative z-50">
+      <div className="flex items-center justify-between">
+        <SectionTitle
+          titleFirstWord={"My Blogs"}
+          titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
+          divClassName={"left-28 flex justify-start "}
+        ></SectionTitle>
+        <FaXmark className="text-7xl text-white" />
+      </div>
+      <GradientBackground
+        className={`absolute top-80 left-4 bg-pink-700 blur-[120px] w-96 h-80 opacity-40`}
+      />
+      <GradientBackground
+        className={`absolute top-20 right-4 bg-fuchsia-800 blur-[120px] w-96 h-80 opacity-40`}
+      />
+      <GradientBackground
+        className={`absolute top-96 right-40 bg-blue-800 blur-[120px] w-96 h-80 opacity-40`}
+      />
       <div className="grid grid-cols-2 grid-rows-2 gap-10 mt-20">
         {blogs.slice(0, visibleBlogs).map((blog) => (
           <BlogCard key={`${blog.id}`} {...blog} />

@@ -32,11 +32,9 @@ const Blogs = () => {
         ))}
       </div>
       <div onClick={toggleBlogs} className="flex justify-center mt-10">
-        {visibleBlogs < blogs.length && (
-          <Button className="text-white" >
-            {showMoreBlogs ? "Show Less Blogs" : "Show More Blogs"}
-          </Button>
-        )}
+        <Button className="text-white">
+          {showMoreBlogs ? "Show Less Blogs" : "Show More Blogs"}
+        </Button>
       </div>
     </div>
   );

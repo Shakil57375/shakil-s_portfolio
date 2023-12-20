@@ -5,6 +5,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import BottomToTop from "./BottomToTop";
 import Skills from "./Skills";
+import Blogs from "./Blogs";
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
       {/* <AboutMe /> */}
       <Skills />
       <Projects />
+      <Blogs />
       {/* <Contact /> */}
       <BottomToTop />
     </div>

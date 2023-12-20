@@ -39,7 +39,6 @@ const BlogCard = ({ id, title, description, image }) => {
           </div>
         )}
       </div>
-      
     </div>
   );
 };

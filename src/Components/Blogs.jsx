@@ -3,17 +3,17 @@ import { blogs } from "../Data/BlogsData";
 import { useState } from "react";
 import BlogCard from "./BlogCard";
 import Button from "./Button";
+
 const Blogs = () => {
-  console.log(blogs);
   const [visibleBlogs, setVisibleBlogs] = useState(4);
   const [showMoreBlogs, setShowMoreBlogs] = useState(false);
-  const length = 9;
-  const toggleBlogs = (length) => {
+
+  const toggleBlogs = () => {
     setShowMoreBlogs(!showMoreBlogs);
 
     // Set the state accordingly
     if (!showMoreBlogs) {
-      setVisibleBlogs(length);
+      setVisibleBlogs(blogs.length);
     } else {
       setVisibleBlogs(4);
     }
@@ -31,14 +31,11 @@ const Blogs = () => {
           <BlogCard key={`${blog.id}`} {...blog} />
         ))}
       </div>
-      <div className="flex justify-center mt-10">
-        {visibleBlogs < length && (
-          <button
-            className="text-white custom-button"
-            onClick={() => toggleBlogs(blogs.length)}
-          >
+      <div onClick={toggleBlogs} className="flex justify-center mt-10">
+        {visibleBlogs < blogs.length && (
+          <Button className="text-white" >
             {showMoreBlogs ? "Show Less Blogs" : "Show More Blogs"}
-          </button>
+          </Button>
         )}
       </div>
     </div>

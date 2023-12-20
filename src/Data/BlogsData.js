@@ -47,11 +47,5 @@ export const blogs = [
       description: "Explore the world of Next.js, the React framework for building server-side rendered (SSR) and static web applications. This blog is your guide to leveraging the power of Next.js to create performant and SEO-friendly React applications. From project setup to dynamic routing and data fetching, you'll explore every aspect of Next.js development.\n\nLearn how to optimize your web applications for performance, implement server-side rendering, and deploy your Next.js projects to production. Whether you're a React developer looking to enhance your skills or a newcomer to Next.js, this blog empowers you to build modern and efficient web applications.",
       image: "https://i.ibb.co/zm7jHY5/Next-Image.png",
     },
-    {
-      id: 9,
-      title: "TypeScript in Modern Development",
-      description: "Elevate your JavaScript development with TypeScript, a superset of JavaScript that adds static typing and advanced features to the language. This blog is your comprehensive guide to TypeScript in modern development, covering everything from basic types and interfaces to advanced features like generics and decorators.\n\nExplore how TypeScript enhances code quality, provides better tooling, and enables seamless collaboration in large codebases. From integrating TypeScript into existing projects to leveraging its features for enhanced development workflows, this blog equips you with the knowledge to become proficient in TypeScript.\n\nWhether you're a JavaScript developer looking to level up your skills or a newcomer to TypeScript, this blog provides the insights you need to succeed.",
-      image: "https://i.ibb.co/0CDJb3y/image-1.jpg",
-    },
   ];
   

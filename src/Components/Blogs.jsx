@@ -23,13 +23,13 @@ const Blogs = () => {
 
   return (
     <div className="paddingX paddingY relative z-50">
-      <div className="flex items-center justify-between">
+      <div className="flex items-start justify-between">
         <SectionTitle
           titleFirstWord={"My Blogs"}
           titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
           divClassName={"left-28 flex justify-start "}
         ></SectionTitle>
-        <FaXmark className="text-7xl text-white" />
+        <FaXmark className="text-8xl text-white" />
       </div>
       <GradientBackground
         className={`absolute top-80 left-4 bg-pink-700 blur-[120px] w-96 h-80 opacity-40`}
@@ -38,7 +38,10 @@ const Blogs = () => {
         className={`absolute top-20 right-4 bg-fuchsia-800 blur-[120px] w-96 h-80 opacity-40`}
       />
       <GradientBackground
-        className={`absolute top-96 right-40 bg-blue-800 blur-[120px] w-96 h-80 opacity-40`}
+        className={`absolute top-96 right-28 bg-blue-800 blur-[120px] w-96 h-80 opacity-40`}
+      />
+      <GradientBackground
+        className={`absolute top-[500px] right-[500px] bg-rose-800 blur-[120px] w-96 h-80 opacity-40`}
       />
       <div className="grid grid-cols-2 grid-rows-2 gap-10 mt-20">
         {blogs.slice(0, visibleBlogs).map((blog) => (

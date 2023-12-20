@@ -22,7 +22,7 @@ const Blogs = () => {
   };
 
   return (
-    <div className="paddingX paddingY relative z-50">
+    <div className="paddingX paddingY relative z-30">
       <div className="flex items-start justify-between">
         <SectionTitle
           titleFirstWord={"My Blogs"}

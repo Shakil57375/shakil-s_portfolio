@@ -2,6 +2,7 @@ import SectionTitle from "../Utils/SectionTitle";
 import { blogs } from "../Data/BlogsData";
 import { useState } from "react";
 import BlogCard from "./BlogCard";
+import Button from "./Button";
 const Blogs = () => {
   console.log(blogs);
   const [visibleBlogs, setVisibleBlogs] = useState(4);
@@ -25,16 +26,16 @@ const Blogs = () => {
         titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
         divClassName={"left-28 flex justify-start "}
       ></SectionTitle>
-      <div>
+      <div className="grid grid-cols-2 grid-rows-2 gap-10 mt-20">
         {blogs.slice(0, visibleBlogs).map((blog) => (
           <BlogCard key={`${blog.id}`} {...blog} />
         ))}
       </div>
-      <div>
+      <div className="flex justify-center mt-10">
         {blogs.length > 4 && (
-          <button onClick={toggleBlogs}>
+          <Button onClick={toggleBlogs}>
             {showMore ? "Show More Blogs" : "Show Less Blogs"}
-          </button>
+          </Button>
         )}
       </div>
     </div>

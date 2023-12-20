@@ -35,7 +35,7 @@ const Blogs = () => {
         className={`absolute top-80 left-4 bg-pink-700 blur-[120px] w-96 h-80 opacity-40`}
       />
       <GradientBackground
-        className={`absolute top-20 right-4 bg-fuchsia-800 blur-[120px] w-96 h-80 opacity-40`}
+        className={`absolute top-20 right-4 bg-fuchsia-900 blur-[120px] w-96 h-80 opacity-40`}
       />
       <GradientBackground
         className={`absolute top-96 right-28 bg-blue-800 blur-[120px] w-96 h-80 opacity-40`}

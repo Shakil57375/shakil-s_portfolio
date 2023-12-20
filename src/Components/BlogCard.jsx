@@ -1,20 +1,9 @@
 import { useState } from "react";
-import "./BlogCard.css"
+
 /* eslint-disable react/prop-types */
 const BlogCard = ({ id, title, description, image }) => {
-  const [visibleBlogs, setVisibleBlogs] = useState(3);
-  const [showMoreBlogs, setShowMoreBlogs] = useState(false);
   const [expandedDescriptions, setExpandedDescriptions] = useState({});
-  const toggleBlogs = () => {
-    setShowMoreBlogs(!showMoreBlogs);
 
-    // Set the state accordingly
-    if (!showMoreBlogs) {
-      setVisibleBlogs(length);
-    } else {
-      setVisibleBlogs(3);
-    }
-  };
   const toggleDescription = (blogId) => {
     setExpandedDescriptions((prevState) => ({
       ...prevState,
@@ -50,6 +39,7 @@ const BlogCard = ({ id, title, description, image }) => {
           </div>
         )}
       </div>
+      
     </div>
   );
 };

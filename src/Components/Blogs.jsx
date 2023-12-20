@@ -6,19 +6,19 @@ import Button from "./Button";
 const Blogs = () => {
   console.log(blogs);
   const [visibleBlogs, setVisibleBlogs] = useState(4);
-  const [showMore, setShowMore] = useState(true);
-
-  const toggleBlogs = () => {
-    // Toggle between showing more or fewer blogs
-    setShowMore(!showMore);
+  const [showMoreBlogs, setShowMoreBlogs] = useState(false);
+  const length = 9;
+  const toggleBlogs = (length) => {
+    setShowMoreBlogs(!showMoreBlogs);
 
     // Set the state accordingly
-    if (showMore) {
-      setVisibleBlogs(blogs.length);
+    if (!showMoreBlogs) {
+      setVisibleBlogs(length);
     } else {
       setVisibleBlogs(4);
     }
   };
+
   return (
     <div className="paddingX paddingY">
       <SectionTitle
@@ -32,10 +32,13 @@ const Blogs = () => {
         ))}
       </div>
       <div className="flex justify-center mt-10">
-        {blogs.length > 4 && (
-          <Button onClick={toggleBlogs}>
-            {showMore ? "Show More Blogs" : "Show Less Blogs"}
-          </Button>
+        {visibleBlogs < length && (
+          <button
+            className="text-white custom-button"
+            onClick={() => toggleBlogs(blogs.length)}
+          >
+            {showMoreBlogs ? "Show Less Blogs" : "Show More Blogs"}
+          </button>
         )}
       </div>
     </div>

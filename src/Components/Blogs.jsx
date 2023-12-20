@@ -20,7 +20,7 @@ const Blogs = () => {
   };
 
   return (
-    <div className="paddingX paddingY">
+    <div className="paddingX paddingY relative">
       <SectionTitle
         titleFirstWord={"My Blogs"}
         titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}

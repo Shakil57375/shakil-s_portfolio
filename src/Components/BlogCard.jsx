@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 /* eslint-disable react/prop-types */
 const BlogCard = ({ id, title, description, image }) => {
   const [expandedDescriptions, setExpandedDescriptions] = useState({});

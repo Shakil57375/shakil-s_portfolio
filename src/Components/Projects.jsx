@@ -39,9 +39,6 @@ const Projects = () => {
         <GradientBackground
           className={`absolute top-80 left-4 bg-blue-800 blur-3xl w-96 h-80 opacity-40`}
         />
-        <GradientBackground
-          className={`absolute top-[1100px] right-4 bg-pink-600 blur-3xl w-96 h-80 opacity-40`}
-        />
         <div className="flex flex-col gap-4 absolute top-96 left-36">
           <div className="flex gap-4">
             <div className="w-2 h-2 rounded-full bg-gray-400"></div>
@@ -79,6 +76,10 @@ const Projects = () => {
             <div className="w-2 h-2 rounded-full bg-gray-400"></div>
           </div>
         </div>
+        <GradientBackground
+          className={`absolute top-[1100px] right-4 bg-pink-600 blur-3xl w-96 h-80 opacity-40`}
+        />
+        
         <div className="flex flex-col gap-4 absolute top-[1250px] right-10">
           <div className="flex gap-4">
             <div className="w-2 h-2 rounded-full bg-gray-400"></div>
@@ -109,6 +110,47 @@ const Projects = () => {
             <div className="w-2 h-2 rounded-full bg-gray-400"></div>
             <div className="w-2 h-2 rounded-full bg-gray-400"></div>
             <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+        </div>
+
+        <GradientBackground
+          className={`absolute top-[1800px] left-4 bg-rose-800 blur-3xl w-96 h-80 opacity-40`}
+        />
+        <div className="flex flex-col gap-4 absolute top-[1900px] left-32">
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+          <div className="flex gap-4">
             <div className="w-2 h-2 rounded-full bg-gray-400"></div>
             <div className="w-2 h-2 rounded-full bg-gray-400"></div>
             <div className="w-2 h-2 rounded-full bg-gray-400"></div>

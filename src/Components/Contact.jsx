@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import SectionTitle from "../Utils/SectionTitle";
 import { useState } from "react";
 import Swal from "sweetalert2";
-
+import "./Contact.css";
 const Contact = () => {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
@@ -61,58 +61,74 @@ const Contact = () => {
       );
   };
   return (
-    <section className="h-fit">
-      <div className=" paddingY">
-        <SectionTitle
-          titleFirstWord={"Contact Me"}
-          titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
-          divClassName={"left-28 flex justify-center "}
-        ></SectionTitle>
-        <div
-          className={`xl:mt-4 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-        >
+    <section className="h-fit  paddingY paddingX">
+      <SectionTitle
+        titleFirstWord={"Contact Me"}
+        titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
+        divClassName={"left-28 flex justify-center "}
+      ></SectionTitle>
+      <div className="flex justify-between items-start mt-12 ">
+        <div className="basis-full lg:basis-1/2">
+          <p>Drop me a Message</p>
+          <p>
+            As a passionate front-end developer, I thrive on turning ideas into
+            visually stunning and interactive web experiences. Whether you have
+            a project in mind, need help solving a coding challenge, or just
+            want to chat about the latest web technologies, I am here for you!
+          </p>
+        </div>
+        <div className="basis-full lg:basis-1/2">
           <div className="flex-[0.75]  rounded-2xl">
             <form
               ref={formRef}
               onSubmit={handleSubmit}
-              className="mt-12 flex flex-col  gap-8  shadow-xl  lg:hover:-translate-y-2 lg:hover:-translate-x-2 sm:hover:-translate-y-2 sm:hover:-translate-x-2 rounded-lg  relative lg:transform sm:transform-none lg:transition sm:transition-none sm:duration-0 lg:duration-300 p-0 lg:p-8 ease-in-out pb-5"
+              className="flex flex-col gap-4  relative p-0 lg:p-8 ease-in-out pb-5"
             >
               <label className="flex flex-col">
-                <span className="  font-medium mb-4">Your Name</span>
+                <span className="  text-xl text-white font-medium mb-4">
+                  Your Name *
+                </span>
                 <input
                   type="text"
+                  required
                   name="name"
                   value={form.name}
                   onChange={handleChange}
                   placeholder="What's your good name?"
-                  className=" py-4 px-6 placeholder:text-cyan-500 border border-cyan-500 rounded-lg  font-medium"
+                  className=" py-4 px-6 placeholder:text-gray-400 border-none focus:border-none rounded-lg font-medium bg-[rgba(36,9,28,255)] outline-none focus:outline-none text-white"
                 />
               </label>
               <label className="flex flex-col">
-                <span className="  font-medium mb-4">Your email</span>
+                <span className="  text-xl text-white font-medium mb-4">
+                  Your email *
+                </span>
                 <input
                   type="email"
+                  required
                   name="email"
                   value={form.email}
                   onChange={handleChange}
                   placeholder="What's your web address?"
-                  className=" py-4 px-6 placeholder:text-cyan-500 border border-cyan-500 rounded-lg  font-medium"
+                  className="  py-4 px-6 placeholder:text-gray-400 border-none focus:border-none rounded-lg font-medium bg-[rgba(36,9,28,255)] outline-none focus:outline-none text-white"
                 />
               </label>
               <label className="flex flex-col">
-                <span className=" font-medium mb-4">Your Message</span>
+                <span className=" text-xl text-white font-medium mb-4">
+                  Your Message *
+                </span>
                 <textarea
                   rows={7}
                   name="message"
+                  required
                   value={form.message}
                   onChange={handleChange}
                   placeholder="What you want to say?"
-                  className=" py-4 px-6 border border-cyan-500 placeholder:text-cyan-500  rounded-lg   font-medium"
+                  className=" py-4 px-6 placeholder:text-gray-400 border-none focus:border-none rounded-lg font-medium bg-[rgba(36,9,28,255)] outline-none focus:outline-none text-white"
                 />
               </label>
               <button
                 type="submit"
-                className=" py-3 px-8 rounded-xl bg-cyan-500 text-white  w-fit  font-bold shadow-lg mx-auto "
+                className="py-4 px-12 rounded-xl bg-fuchsia-600 text-white w-fit  font-bold shadow-lg mx-auto"
               >
                 {loading ? "Sending..." : "Send"}
               </button>

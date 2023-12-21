@@ -2,6 +2,9 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import SectionTitle from "../Utils/SectionTitle";
 import { useState } from "react";
+import { FiPhone } from "react-icons/fi";
+import { HiOutlineMailOpen } from "react-icons/hi";
+import { IoLocationOutline } from "react-icons/io5";
 import Swal from "sweetalert2";
 import "./Contact.css";
 const Contact = () => {
@@ -61,28 +64,44 @@ const Contact = () => {
       );
   };
   return (
-    <section className="h-fit  paddingY paddingX">
+    <section className="h-fit  paddingY paddingX text-white">
       <SectionTitle
         titleFirstWord={"Contact Me"}
         titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
         divClassName={"left-28 flex justify-center "}
       ></SectionTitle>
-      <div className="flex justify-between items-start mt-12 ">
-        <div className="basis-full lg:basis-1/2">
-          <p>Drop me a Message</p>
-          <p>
+      <div className="flex justify-between items-start mt-12 gap-10 ">
+        <div className="basis-full lg:basis-1/2 space-y-12">
+          <p className="text-3xl font-Poppins font-semibold">
+            Drop me a Message
+          </p>
+          <p className="my-6 text-sm font-Poppins leading-7">
             As a passionate front-end developer, I thrive on turning ideas into
             visually stunning and interactive web experiences. Whether you have
             a project in mind, need help solving a coding challenge, or just
             want to chat about the latest web technologies, I am here for you!
           </p>
+          <div className="space-y-7">
+            <div className="flex items-center gap-4">
+              <FiPhone className="text-3xl" />
+              <p className="text-2xl ">+880 1814265294</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <HiOutlineMailOpen className="text-3xl" />
+              <p className="text-2xl ">shakil57375@gmail.com</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <IoLocationOutline className="text-3xl" />
+              <p className="text-2xl ">Barura, Cumilla, Bangladesh</p>
+            </div>
+          </div>
         </div>
         <div className="basis-full lg:basis-1/2">
           <div className="flex-[0.75]  rounded-2xl">
             <form
               ref={formRef}
               onSubmit={handleSubmit}
-              className="flex flex-col gap-4  relative p-0 lg:p-8 ease-in-out pb-5"
+              className="flex flex-col gap-4 relative ease-in-out"
             >
               <label className="flex flex-col">
                 <span className="  text-xl text-white font-medium mb-4">

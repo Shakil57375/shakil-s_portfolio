@@ -13,13 +13,13 @@ const Banner = () => {
   return (
     <div className="header flex items-center justify-between !z-10">
       <GradientBackground
-        className={`absolute top-10 -right-60 bg-blue-800 blur-3xl w-96 h-80 opacity-40`}
+        className={`absolute top-10 right-0 bg-blue-800 blur-3xl w-96 h-80 opacity-40`}
       />
       <GradientBackground
-        className={`absolute top-56 -right-48 bg-pink-800 blur-3xl w-96 h-80 opacity-40`}
+        className={`absolute top-56 right-0 bg-pink-800 blur-3xl w-96 h-80 opacity-40`}
       />
       <GradientBackground
-        className={`absolute top-[400px] -right-48 bg-pink-300 blur-3xl w-96 h-80 opacity-40`}
+        className={`absolute top-[400px] right-0 bg-pink-300 blur-3xl w-96 h-80 opacity-40`}
       />
       <div className="flex flex-col gap-2 text-white absolute top-1/3">
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
@@ -29,7 +29,7 @@ const Banner = () => {
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
       </div>
       <section className="text-white flex flex-col z-20 paddingX paddingY">
-        <div className="flex mt-24 items-center justify-between paddingX gap-56">
+        <div className="flex mt-24 items-center justify-between paddingX gap-10">
           <div className="flex flex-col  items-start">
             <h1 className="font-semibold text-gray-500 text-3xl">
               MERN-stack developer
@@ -56,7 +56,7 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="relative left-28">
             <ImCross className="text-3xl" />
             <div className="box relative z-0 top-24 right-8"></div>
             <img
@@ -74,7 +74,7 @@ const Banner = () => {
           </div>
         </div>
       </section>
-      <div className="relative right-24 flex flex-col items-center">
+      <div className="relative right-12 flex flex-col items-center">
         <FaLongArrowAltDown className="text-xl text-white animate-bounce h-6" />
         <Social />
       </div>

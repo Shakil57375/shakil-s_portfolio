@@ -7,6 +7,7 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 import { IoLocationOutline } from "react-icons/io5";
 import Swal from "sweetalert2";
 import "./Contact.css";
+import GradientBackground from "./GradientBackground";
 const Contact = () => {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
@@ -64,12 +65,18 @@ const Contact = () => {
       );
   };
   return (
-    <section className="h-fit  paddingY paddingX text-white">
+    <section className="h-fit  paddingY paddingX text-white relative">
       <SectionTitle
         titleFirstWord={"Contact Me"}
         titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
         divClassName={"left-28 flex justify-center "}
       ></SectionTitle>
+      <GradientBackground
+        className={`absolute top-20 right-4 bg-blue-800 blur-[120px] w-96 h-80 opacity-40`}
+      />
+      <GradientBackground
+        className={`absolute top-60 left-0 bg-rose-700 blur-[120px] w-96 h-80 opacity-40`}
+      />
       <div className="flex justify-between items-start mt-12 gap-10 ">
         <div className="basis-full lg:basis-1/2 space-y-12">
           <p className="text-3xl font-Poppins font-semibold">

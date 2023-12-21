@@ -11,12 +11,11 @@ const Main = () => {
   return (
     <div className="">
       <FloatingNav />
-      {/* //Todo : uncomment banner */}
-      {/* <Banner /> */}
-      {/* <AboutMe /> */}
+      <Banner />
+      <AboutMe />
       <Skills />
       {/* <Projects /> */}
-      {/* <Blogs /> */}
+      <Blogs />
       <Contact />
       <BottomToTop />
     </div>

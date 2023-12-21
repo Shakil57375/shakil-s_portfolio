@@ -29,7 +29,7 @@ const AboutMe = () => {
           <div className="relative z-30">
             <img className="about__image" src={aboutImage} alt="About Shakil" />
           </div>
-          <div className="relative -top-[470px] -right-8 z-10  about_bg_shape"></div>
+          <div className="relative -top-[470px] right-8 z-10  about_bg_shape"></div>
         </div>
         <div className=" lg:p-0 text-white relative">
           <div>
@@ -47,12 +47,12 @@ const AboutMe = () => {
           <div>
             <GradientBackground
               className={
-                "absolute -top-60 -right-40 bg-violet-600 blur-[150px] w-[400px] opacity-40 h-96 -skew-y-[45deg]"
+                "absolute -top-60 right-40 bg-violet-600 blur-[150px] w-[400px] opacity-40 h-96 -skew-y-[45deg]"
               }
             />
             <GradientBackground
               className={
-                "absolute top-60 -right-48 bg-rose-800 blur-[120px] w-[400px] opacity-80 h-40"
+                "absolute top-60 right-48 bg-rose-800 blur-[120px] w-[400px] opacity-80 h-40"
               }
             />
 

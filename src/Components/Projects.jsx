@@ -32,10 +32,10 @@ const Projects = () => {
         ></SectionTitle>
         <GradientBackground
           className={
-            "absolute top-0 -right-48 bg-blue-600 blur-[120px] w-[400px] opacity-80 h-40"
+            "absolute top-0 right-0 bg-blue-600 blur-[120px] w-[400px] opacity-80 h-40"
           }
         />
-        <ImCross className="text-6xl absolute top-40 right-16 text-white" />
+        <ImCross className="text-6xl absolute top-40 right-56 text-white" />
         <GradientBackground
           className={`absolute top-80 left-4 bg-cyan-600 blur-3xl w-96 h-80 opacity-40`}
         />

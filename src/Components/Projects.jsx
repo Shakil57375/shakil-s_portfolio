@@ -23,7 +23,7 @@ const Projects = () => {
     requestAnimationFrame(raf);
   });
   return (
-    <div className="relative">
+    <div className="relative max-w-[1200px] mx-auto">
       <div>
         <SectionTitle
           titleFirstWord={"My Projects"}
@@ -157,7 +157,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <main ref={container} className="relative mt-32">
+      <main ref={container} className="relative mt-32 ">
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;
           return (

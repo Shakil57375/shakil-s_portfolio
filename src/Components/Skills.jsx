@@ -14,7 +14,7 @@ const Skills = () => {
             divClassName={"relative top-10"}
           ></SectionTitle>
         </div>
-        <div className="items-start relative top-10">
+        <div className="items-start relative top-10  hidden lg:block">
           {/* <span className=" text-white text-8xl h-10 ">&#8592;</span> */}
           <Arrow />
         </div>
@@ -22,7 +22,7 @@ const Skills = () => {
       <GradientBackground
         className={`absolute top-80 left-4 bg-purple-700 blur-[120px] w-96 h-80 opacity-40`}
       />
-      <div className="flex items-center justify-between gap-10">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
         <div className="mt-32 flex flex-col gap-5">
           <div className="flex gap-[120px] items-center">
             <p className="text-2xl font-semibold text-white">HTML</p>

@@ -24,7 +24,7 @@ const AboutMe = () => {
       <div className="flex z-40 lg:flex-row flex-col-reverse items-start justify-between paddingY paddingX h-fit  w-full gap-48 relative">
         <div className=" z-30 lg:h-[700px] h-[500px]">
           <GradientBackground
-            className={`absolute top-80 left-4 bg-blue-800 blur-3xl w-96 h-80 opacity-40 lg:block hidden`}
+            className={`absolute top-80 left-4 bg-blue-800 blur-3xl w-96 h-80 opacity-40 `}
           />
           <div className="relative z-30 ">
             <img className="about__image" src={aboutImage} alt="About Shakil" />
@@ -47,12 +47,12 @@ const AboutMe = () => {
           <div>
             <GradientBackground
               className={
-                "absolute -top-60 right-40 bg-violet-600 blur-[150px] w-[400px] opacity-40 h-96 -skew-y-[45deg] lg:block hidden"
+                "absolute -top-60 right-40 bg-violet-600 blur-[150px] w-[400px] opacity-40 h-96 -skew-y-[45deg] "
               }
             />
             <GradientBackground
               className={
-                "absolute top-60 right-48 bg-rose-800 blur-[120px] w-[400px] opacity-80 h-40 lg:block hidden"
+                "absolute top-60 right-48 bg-rose-800 blur-[120px] w-[400px] opacity-80 h-40 "
               }
             />
 

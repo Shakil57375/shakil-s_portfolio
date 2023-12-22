@@ -23,13 +23,13 @@ const Blogs = () => {
 
   return (
     <div className="paddingX paddingY relative z-30">
-      <div className="flex items-start justify-between">
+      <div className="flex items-start justify-between ">
         <SectionTitle
           titleFirstWord={"My Blogs"}
           titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
-          divClassName={"left-28 flex justify-start "}
+          divClassName={"left-28 flex justify-start text-center "}
         ></SectionTitle>
-        <FaXmark className="text-8xl text-white" />
+        <FaXmark className="text-8xl text-white lg:block hidden" />
       </div>
       <GradientBackground
         className={`absolute top-80 left-4 bg-pink-700 blur-[120px] w-96 h-80 opacity-40`}
@@ -43,7 +43,7 @@ const Blogs = () => {
       <GradientBackground
         className={`absolute top-[500px] right-[500px] bg-rose-800 blur-[120px] w-96 h-80 opacity-40`}
       />
-      <div className="grid grid-cols-2 grid-rows-2 gap-10 mt-20">
+      <div className="grid lg:grid-cols-2 grid-cols-1 grid-rows-1 lg:grid-rows-2 gap-10 mt-20  px-2">
         {blogs.slice(0, visibleBlogs).map((blog) => (
           <BlogCard key={`${blog.id}`} {...blog} />
         ))}

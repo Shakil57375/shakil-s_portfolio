@@ -10,7 +10,7 @@ const BlogCard = ({ id, title, description, image }) => {
     }));
   };
   return (
-    <div className="w-[600px] text-white z-50">
+    <div className="lg:w-[600px] w-full  text-white z-50">
       <img
         className="w-full h-[300px] rounded-3xl"
         src={image}

@@ -77,7 +77,7 @@ const Contact = () => {
       <GradientBackground
         className={`absolute top-60 left-0 bg-rose-700 blur-[120px] w-96 h-80 opacity-40`}
       />
-      <div className="flex justify-between items-start mt-12 gap-10 ">
+      <div className="flex lg:flex-row flex-col justify-between items-start mt-12 gap-10 lg:px-0 px-2">
         <div className="basis-full lg:basis-1/2 space-y-12">
           <p className="text-3xl font-Poppins font-semibold">
             Drop me a Message
@@ -104,11 +104,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="basis-full lg:basis-1/2">
-          <div className="flex-[0.75]  rounded-2xl">
+          <div className="rounded-2xl">
             <form
               ref={formRef}
               onSubmit={handleSubmit}
-              className="flex flex-col gap-4 relative ease-in-out"
+              className="flex flex-col gap-4"
             >
               <label className="flex flex-col">
                 <span className="  text-xl text-white font-medium mb-4">
@@ -121,7 +121,7 @@ const Contact = () => {
                   value={form.name}
                   onChange={handleChange}
                   placeholder="What's your good name?"
-                  className=" py-4 px-6 placeholder:text-gray-400 border-none focus:border-none rounded-lg font-medium bg-[rgba(36,9,28,255)] outline-none focus:outline-none text-white"
+                  className=" py-4 px-6 placeholder:text-gray-400 border-none focus:border-none rounded-lg font-medium bg-[rgba(36,9,28,255)] outline-none focus:outline-none text-white "
                 />
               </label>
               <label className="flex flex-col">

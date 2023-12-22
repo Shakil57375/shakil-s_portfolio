@@ -12,12 +12,12 @@ const Main = () => {
     <div className="">
       <FloatingNav />
       <Banner />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <Blogs />
-      <Contact />
-      <BottomToTop />
+      {/* <AboutMe /> */}
+      {/* <Skills /> */}
+      {/* <Projects /> */}
+      {/* <Blogs /> */}
+      {/* <Contact /> */}
+      {/* <BottomToTop /> */}
     </div>
   );
 };

@@ -11,8 +11,8 @@ const FloatingNav = () => {
   const [activeNav, setActiveNav] = useState();
   
   return (
-      <nav className="navbar gap-5 fixed paddingX !z-50 top-2 h-16 w-11/12 !py-10">
-        <div className="navbar-start !z-50">
+      <nav className="navbar gap-5 fixed paddingX !z-50 top-2 h-16 lg:w-11/12 w-fit !py-10">
+        <div className="navbar-start !z-50 lg:block hidden">
           <Link to="/" className="">
             <img
               src="https://i.ibb.co/9nSc8zm/shakil-s-logo.png"
@@ -73,7 +73,7 @@ const FloatingNav = () => {
             <MdConnectWithoutContact />
           </Link>
         </div>
-        <div className="navbar-end flex gap-5">
+        <div className="navbar-end gap-5 lg:block hidden">
           <Button>Let's Talk</Button>
         </div>
       </nav>

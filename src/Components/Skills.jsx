@@ -3,7 +3,7 @@ import Arrow from "./Arrow";
 import GradientBackground from "./GradientBackground";
 const Skills = () => {
   return (
-    <div className="paddingX paddingY relative h-fit pb-12">
+    <div id="skills" className="paddingX paddingY relative h-fit pb-12">
       <div className="flex items-center gap-20 ">
         <div>
           <SectionTitle

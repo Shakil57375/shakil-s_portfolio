@@ -23,12 +23,14 @@ const Projects = () => {
     requestAnimationFrame(raf);
   });
   return (
-    <div className="relative max-w-md lg:max-w-[1200px] mx-auto">
+    <div id="projects" className="relative max-w-md lg:max-w-[1200px] mx-auto">
       <div>
         <SectionTitle
           titleFirstWord={"My Projects"}
           titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
-          divClassName={"relative lg:top-10 top-0 lg:left-28 left-0 text-center flex justify-center "}
+          divClassName={
+            "relative lg:top-10 top-0 lg:left-28 left-0 text-center flex justify-center "
+          }
         ></SectionTitle>
         <GradientBackground
           className={
@@ -79,7 +81,7 @@ const Projects = () => {
         <GradientBackground
           className={`absolute top-[1100px] right-4 bg-pink-600 blur-3xl w-96 h-80 opacity-40`}
         />
-        
+
         <div className="flex flex-col gap-4 absolute top-[1250px] right-10">
           <div className="flex gap-4">
             <div className="w-2 h-2 rounded-full bg-gray-400"></div>

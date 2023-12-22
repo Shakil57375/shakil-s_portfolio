@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FaHome, FaUser, FaChartLine } from "react-icons/fa";
 import { MdConnectWithoutContact } from "react-icons/md";
-import { RiServiceLine } from "react-icons/ri";
+import { FaBlog } from "react-icons/fa";
+import { MdLightbulb } from "react-icons/md";
 import { Link } from "react-scroll";
 import "./floatingNav.css";
 import { useState } from "react";
@@ -11,15 +12,13 @@ const FloatingNav = () => {
   const [activeNav, setActiveNav] = useState();
   
   return (
-      <nav className="navbar gap-5 fixed paddingX !z-50 top-2 h-16 lg:w-11/12 w-fit !py-10">
-        <div className="navbar-start !z-50 lg:block hidden">
-          <Link to="/" className="">
+      <nav  className="navbar gap-5 fixed paddingX !z-50 top-2 h-16 lg:w-11/12 w-fit !py-10">
+        <div id="contactMe" className="navbar-start !z-50 lg:block hidden">
             <img
               src="https://i.ibb.co/9nSc8zm/shakil-s-logo.png"
               alt="logo"
-              className="w-20 h-16 cursor-pointer  object-contain"
+              className="w-20 h-16 cursor-pointer"
             />
-          </Link>
         </div>
         <div className="navbar-center flex gap-3 z-50">
           <Link
@@ -43,14 +42,14 @@ const FloatingNav = () => {
             <FaUser />
           </Link>
           <Link
-            to="services"
+            to="skills"
             spy={true}
             smooth={true}
             duration={500}
-            className={activeNav === "services" ? "active" : ""}
-            onClick={() => setActiveNav("services")}
+            className={activeNav === "skills" ? "active" : ""}
+            onClick={() => setActiveNav("skills")}
           >
-            <RiServiceLine />
+            <MdLightbulb />
           </Link>
           <Link
             to="projects"
@@ -63,18 +62,28 @@ const FloatingNav = () => {
             <FaChartLine />
           </Link>
           <Link
-            to="contact"
+            to="blogs"
             spy={true}
             smooth={true}
             duration={500}
-            className={activeNav === "contact" ? "active" : ""}
-            onClick={() => setActiveNav("contact")}
+            className={activeNav === "blogs" ? "active" : ""}
+            onClick={() => setActiveNav("blogs")}
+          >
+            <FaBlog />
+          </Link>
+          <Link
+            to="contactMe"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className={activeNav === "contactMe" ? "active" : ""}
+            onClick={() => setActiveNav("contactMe")}
           >
             <MdConnectWithoutContact />
           </Link>
         </div>
         <div className="navbar-end gap-5 lg:flex hidden">
-          <Button>Let's Talk</Button>
+          <Button id={"contactMe"}>Let's Talk</Button>
         </div>
       </nav>
   );

@@ -65,7 +65,10 @@ const Contact = () => {
       );
   };
   return (
-    <section className="h-fit  paddingY paddingX text-white relative">
+    <section
+      id="contactMe"
+      className="h-fit  paddingY paddingX text-white relative"
+    >
       <SectionTitle
         titleFirstWord={"Contact Me"}
         titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}

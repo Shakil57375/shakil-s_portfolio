@@ -11,7 +11,7 @@ import GradientBackground from "./GradientBackground";
 import Social from "./Social";
 const Banner = () => {
   return (
-    <div className="header flex items-center justify-between !z-10">
+    <div id="home" className="header flex items-center justify-between !z-10">
       <GradientBackground
         className={`absolute top-10 right-0 bg-blue-800 blur-3xl w-96 h-80 opacity-40`}
       />
@@ -37,7 +37,9 @@ const Banner = () => {
             <p className="lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat mt-8 mb-1">
               SHAKIL
             </p>
-            <p className="lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat">HOSSAIN</p>
+            <p className="lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat">
+              HOSSAIN
+            </p>
             <div className="mt-10 flex flex-col lg:flex-row justify-between gap-4 lg:gap-40 items-start">
               <div className=" border-r-0 border-t-0 border-b-0 border-l-1 pl-8 py-2 border text-xl font-semibold text-gray-500">
                 <p>I am MERN-stack</p>

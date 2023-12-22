@@ -7,13 +7,13 @@ body{
 }
 
 .paddingX {
-   @apply sm:px-28 px-6
+   @apply lg:px-28 px-0
 }
 .paddingY{
-   @apply sm:py-10 py-6
+   @apply lg:py-10 py-0
 }
 .padding{
-   @apply sm:px-16 px-6 sm:py-16 py-10
+   @apply lg:px-16 px-6 lg:py-16 py-10
 }
 
 

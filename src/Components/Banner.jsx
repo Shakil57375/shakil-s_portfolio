@@ -48,7 +48,7 @@ const Banner = () => {
                 <a
                   href={CV}
                   download
-                  className="cursor-pointer bg-pink-700 flex flex-col py-1 lg:py-4 lg:px-8 px-5 pulse-anim play-icon items-center gap-1"
+                  className="cursor-pointer bg-pink-700 flex flex-col py-1 lg:py-4 lg:px-8 px-4 pulse-anim play-icon items-center gap-1"
                 >
                   <FaDownload className="text-3xl" />
                   <p className="text-3xl font-bold">CV</p>

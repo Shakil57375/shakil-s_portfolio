@@ -73,7 +73,7 @@ const FloatingNav = () => {
             <MdConnectWithoutContact />
           </Link>
         </div>
-        <div className="navbar-end gap-5 lg:block hidden">
+        <div className="navbar-end gap-5 lg:flex hidden">
           <Button>Let's Talk</Button>
         </div>
       </nav>

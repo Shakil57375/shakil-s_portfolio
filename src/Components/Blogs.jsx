@@ -43,7 +43,7 @@ const Blogs = () => {
       <GradientBackground
         className={`absolute top-[500px] right-[500px] bg-rose-800 blur-[120px] w-96 h-80 opacity-40`}
       />
-      <div className="grid lg:grid-cols-2 grid-cols-1 grid-rows-1 lg:grid-rows-2 gap-10 mt-20  px-2">
+      <div className="grid lg:grid-cols-2 grid-cols-1 grid-rows-1 lg:grid-rows-2 gap-10 mt-20 lg:px-0 px-2">
         {blogs.slice(0, visibleBlogs).map((blog) => (
           <BlogCard key={`${blog.id}`} {...blog} />
         ))}

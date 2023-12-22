@@ -29,26 +29,26 @@ const Banner = () => {
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
       </div>
       <section className="text-white flex flex-col z-20 paddingX paddingY">
-        <div className="flex mt-24 items-center justify-between paddingX gap-10">
+        <div className="flex flex-col lg:flex-row mt-24 items-center justify-between paddingX gap-0 lg:gap-10">
           <div className="flex flex-col  items-start">
             <h1 className="font-semibold text-gray-500 text-3xl">
               MERN-stack developer
             </h1>
-            <p className="text-8xl font-extrabold font-Montserrat mt-8 mb-1">
+            <p className="lg:text-8xl text-4xl font-bold lg:font-extrabold font-Montserrat mt-8 mb-1">
               SHAKIL
             </p>
-            <p className="text-8xl font-extrabold font-Montserrat">HOSSAIN</p>
-            <div className="mt-10 flex justify-between gap-40 items-start">
+            <p className="lg:text-8xl text-4xl font-bold lg:font-extrabold font-Montserrat">HOSSAIN</p>
+            <div className="mt-10 flex flex-col lg:flex-row justify-between gap-4 lg:gap-40 items-start">
               <div className=" border-r-0 border-t-0 border-b-0 border-l-1 pl-8 py-2 border text-xl font-semibold text-gray-500">
                 <p>I am MERN-stack</p>
                 <p>developer work remotely</p>
                 <p>from Bangladesh</p>
               </div>
-              <div className="my-5 text-white">
+              <div className="lg:my-5 my-2 text-white">
                 <a
                   href={CV}
                   download
-                  className="cursor-pointer bg-pink-700 flex flex-col  py-4 px-8 pulse-anim play-icon items-center gap-1"
+                  className="cursor-pointer bg-pink-700 flex flex-col py-1 lg:py-4 lg:px-8 px-5 pulse-anim play-icon items-center gap-1"
                 >
                   <FaDownload className="text-3xl" />
                   <p className="text-3xl font-bold">CV</p>
@@ -56,12 +56,12 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="relative left-28">
-            <ImCross className="text-3xl" />
+          <div className="relative lg:left-28 left-0">
+            <ImCross className="text-3xl lg:block hidden" />
             <div className="box relative z-0 top-24 right-8"></div>
             <img
               src="https://i.ibb.co/HrXCPtB/shakil-banner-image.png"
-              className=" z-0 absolute translate-x-10 -translate-y-3/4 top-3/4 h-[650px] mt-8"
+              className=" z-0 absolute translate-x-10 -translate-y-3/4 top-3/4 lg:h-[650px] h-[350px] mt-8"
               alt=""
             />
           </div>
@@ -74,7 +74,7 @@ const Banner = () => {
           </div>
         </div>
       </section>
-      <div className="relative right-12 flex flex-col items-center">
+      <div className="relative right-12 lg:flex lg:flex-col items-center hidden">
         <FaLongArrowAltDown className="text-xl text-white animate-bounce h-6" />
         <Social />
       </div>

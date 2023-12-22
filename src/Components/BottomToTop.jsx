@@ -6,7 +6,7 @@ const BottomToTop = () => {
 
   return (
     <button
-      className="fixed bottom-5 right-5 p-4 bg-blue-500 text-white rounded-full shadow-lg z-40"
+      className="fixed bottom-5 right-5 p-4 bg-gradient-to-r from-purple-800 to-pink-500 text-white rounded-full shadow-lg z-40 animate-bounce"
       onClick={handleScrollToTop}
     >
       <svg

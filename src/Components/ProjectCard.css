@@ -19,7 +19,6 @@
   transform-origin: top;
 }
 
-
 .card .body {
   display: flex;
   height: 100%;
@@ -30,7 +29,6 @@
 .card .body .description {
   width: 40%;
 }
-
 
 .card .body .imageContainer {
   position: relative;
@@ -60,5 +58,25 @@
 .screen:hover img {
   object-fit: cover;
   transform: translateY(calc(-100% + 350px));
-  transition: 2s ease-out ;
+  transition: 2s ease-out;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+    height: fit-content;
+  }
+  .card .body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .card .body .description {
+    width: 100%;
+  }
+  .card .body .imageContainer {
+    width: 100%;
+  }
+  
 }

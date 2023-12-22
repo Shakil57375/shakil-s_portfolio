@@ -13,8 +13,8 @@ const Main = () => {
       <FloatingNav />
       {/* <Banner /> */}
       {/* <AboutMe /> */}
-      <Skills />
-      {/* <Projects /> */}
+      {/* <Skills /> */}
+      <Projects />
       {/* <Blogs /> */}
       {/* <Contact /> */}
       {/* <BottomToTop /> */}

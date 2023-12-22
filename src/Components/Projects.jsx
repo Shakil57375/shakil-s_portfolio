@@ -23,19 +23,19 @@ const Projects = () => {
     requestAnimationFrame(raf);
   });
   return (
-    <div className="relative max-w-[1200px] mx-auto">
+    <div className="relative max-w-md lg:max-w-[1200px] mx-auto">
       <div>
         <SectionTitle
           titleFirstWord={"My Projects"}
           titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
-          divClassName={"relative top-10 left-28 flex justify-center "}
+          divClassName={"relative lg:top-10 top-0 lg:left-28 left-0 text-center flex justify-center "}
         ></SectionTitle>
         <GradientBackground
           className={
             "absolute top-0 right-0 bg-blue-600 blur-[120px] w-[400px] opacity-80 h-40"
           }
         />
-        <ImCross className="text-6xl absolute top-40 right-56 text-white" />
+        <ImCross className="text-6xl absolute top-40 right-56 text-white hidden lg:block" />
         <GradientBackground
           className={`absolute top-80 left-4 bg-cyan-600 blur-3xl w-96 h-80 opacity-40`}
         />
@@ -157,7 +157,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <main ref={container} className="relative mt-32 ">
+      <main ref={container} className="relative lg:mt-32 mt-12 ">
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;
           return (

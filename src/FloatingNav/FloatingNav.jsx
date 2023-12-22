@@ -34,6 +34,7 @@ const FloatingNav = () => {
           <Link
             to="about"
             spy={true}
+            
             smooth={true}
             duration={500}
             className={activeNav === "about" ? "active" : ""}

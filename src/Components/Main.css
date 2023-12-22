@@ -7,11 +7,10 @@
     position: absolute;
     transition-duration: 200ms;
     transition-timing-function: ease-out;
-    animation: cursorAnim .5s infinite alternate;
     pointer-events: none;
     z-index: 50;
 }
-
+/* 
 .cursor::after {
     content: "";
     width: 20px;
@@ -72,4 +71,4 @@ p {
   a {
     color: teal;
   }
-}
+} */

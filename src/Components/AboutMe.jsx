@@ -21,12 +21,12 @@ const AboutMe = () => {
           "text-8xl font-bold paddingX relative font-bold text-center z-40 font-Montserrat"
         }
       ></SectionTitle>
-      <div className="flex z-40 lg:flex-row flex-col items-start justify-between paddingY paddingX h-[600px] w-full gap-48 relative">
+      <div className="flex z-40 lg:flex-row flex-col-reverse items-start justify-between paddingY paddingX h-fit  w-full lg:gap-48 gap-0 relative">
         <div className=" z-30">
           <GradientBackground
-            className={`absolute top-80 left-4 bg-blue-800 blur-3xl w-96 h-80 opacity-40`}
+            className={`absolute top-80 left-4 bg-blue-800 blur-3xl w-96 h-80 opacity-40 lg:block hidden`}
           />
-          <div className="relative z-30">
+          <div className="relative z-30 ">
             <img className="about__image" src={aboutImage} alt="About Shakil" />
           </div>
           <div className="relative -top-[470px] right-8 z-10  about_bg_shape"></div>
@@ -47,12 +47,12 @@ const AboutMe = () => {
           <div>
             <GradientBackground
               className={
-                "absolute -top-60 right-40 bg-violet-600 blur-[150px] w-[400px] opacity-40 h-96 -skew-y-[45deg]"
+                "absolute -top-60 right-40 bg-violet-600 blur-[150px] w-[400px] opacity-40 h-96 -skew-y-[45deg] lg:block hidden"
               }
             />
             <GradientBackground
               className={
-                "absolute top-60 right-48 bg-rose-800 blur-[120px] w-[400px] opacity-80 h-40"
+                "absolute top-60 right-48 bg-rose-800 blur-[120px] w-[400px] opacity-80 h-40 lg:block hidden"
               }
             />
 

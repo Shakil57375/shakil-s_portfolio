@@ -11,8 +11,8 @@ const Main = () => {
   return (
     <div className="">
       <FloatingNav />
-      <Banner />
-      {/* <AboutMe /> */}
+      {/* <Banner /> */}
+      <AboutMe />
       {/* <Skills /> */}
       {/* <Projects /> */}
       {/* <Blogs /> */}

@@ -11,7 +11,7 @@ const AboutMe = () => {
   return (
     <section id="about" className="bg-black z-40 relative">
       <SectionTitle
-        divClassName={`flex flex-col relative top-44 right-48 text-white justify-start items-center z-50`}
+        divClassName={`flex flex-col relative lg:top-44 top-0 lg:right-48 right-0 text-white justify-start items-center z-50`}
         titleFirstWord={"About"}
         titleSecondWord={"Me"}
         titleFirstClassName={
@@ -21,8 +21,8 @@ const AboutMe = () => {
           "text-8xl font-bold paddingX relative font-bold text-center z-40 font-Montserrat"
         }
       ></SectionTitle>
-      <div className="flex z-40 lg:flex-row flex-col-reverse items-start justify-between paddingY paddingX h-fit  w-full lg:gap-48 gap-0 relative">
-        <div className=" z-30">
+      <div className="flex z-40 lg:flex-row flex-col-reverse items-start justify-between paddingY paddingX h-fit  w-full gap-48 relative">
+        <div className=" z-30 lg:h-[700px] h-[500px]">
           <GradientBackground
             className={`absolute top-80 left-4 bg-blue-800 blur-3xl w-96 h-80 opacity-40 lg:block hidden`}
           />
@@ -33,7 +33,7 @@ const AboutMe = () => {
         </div>
         <div className=" lg:p-0 text-white relative">
           <div>
-            <p className="text-sm font-mono mt-3">
+            <p className="text-sm font-mono mt-3 px-3">
               I am an expert in Html, CSS, Javascript, Es6, react.js, bootstrap,
               react-bootstrap, tailwind css, and daisyUi. I am comfortable with
               Mongodb, react hook form, express.js, and Firebase authentication.

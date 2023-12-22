@@ -66,6 +66,7 @@
   .card {
     width: 100%;
     height: fit-content;
+    padding: 20px;
   }
   .card .body {
     display: flex;

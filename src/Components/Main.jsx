@@ -11,13 +11,13 @@ const Main = () => {
   return (
     <div className="">
       <FloatingNav />
-      {/* <Banner /> */}
-      {/* <AboutMe /> */}
-      {/* <Skills /> */}
-      {/* <Projects /> */}
-      {/* <Blogs /> */}
+      <Banner />
+      <AboutMe />
+      <Skills />
+      <Projects />
+      <Blogs />
       <Contact />
-      {/* <BottomToTop /> */}
+      <BottomToTop />
     </div>
   );
 };

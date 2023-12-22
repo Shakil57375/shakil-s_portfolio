@@ -34,21 +34,21 @@ const Banner = () => {
             <h1 className="font-semibold text-gray-500 text-3xl">
               MERN-stack developer
             </h1>
-            <p className="lg:text-8xl text-4xl font-bold lg:font-extrabold font-Montserrat mt-8 mb-1">
+            <p className="lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat mt-8 mb-1">
               SHAKIL
             </p>
-            <p className="lg:text-8xl text-4xl font-bold lg:font-extrabold font-Montserrat">HOSSAIN</p>
+            <p className="lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat">HOSSAIN</p>
             <div className="mt-10 flex flex-col lg:flex-row justify-between gap-4 lg:gap-40 items-start">
               <div className=" border-r-0 border-t-0 border-b-0 border-l-1 pl-8 py-2 border text-xl font-semibold text-gray-500">
                 <p>I am MERN-stack</p>
                 <p>developer work remotely</p>
                 <p>from Bangladesh</p>
               </div>
-              <div className="lg:my-5 my-2 text-white">
+              <div className="lg:my-5 my-2 text-white relative lg:left-0 left-28">
                 <a
                   href={CV}
                   download
-                  className="cursor-pointer bg-pink-700 flex flex-col py-1 lg:py-4 lg:px-8 px-4 pulse-anim play-icon items-center gap-1"
+                  className="cursor-pointer bg-pink-700 flex flex-col py-1 lg:py-4 lg:px-8 px-5 pulse-anim play-icon items-center gap-1"
                 >
                   <FaDownload className="text-3xl" />
                   <p className="text-3xl font-bold">CV</p>
@@ -56,9 +56,9 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="relative lg:left-28 left-0">
+          <div className="relative lg:left-28 left-10">
             <ImCross className="text-3xl lg:block hidden" />
-            <div className="box relative z-0 top-24 right-8"></div>
+            <div className="box relative z-0 top-24 "></div>
             <img
               src="https://i.ibb.co/HrXCPtB/shakil-banner-image.png"
               className=" z-0 absolute translate-x-10 -translate-y-3/4 top-3/4 lg:h-[650px] h-[350px] mt-8"
@@ -74,7 +74,7 @@ const Banner = () => {
           </div>
         </div>
       </section>
-      <div className="relative right-12 lg:flex lg:flex-col items-center hidden">
+      <div className="relative right-8 lg:flex lg:flex-col items-center">
         <FaLongArrowAltDown className="text-xl text-white animate-bounce h-6" />
         <Social />
       </div>

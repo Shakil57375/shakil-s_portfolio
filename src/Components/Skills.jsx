@@ -10,7 +10,7 @@ const Skills = () => {
           <SectionTitle
             titleFirstWord={"My Skills"}
             titleFirstClassName={
-              "text-8xl text-white font-bold font-Montserrat"
+              "lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat text-white text-center"
             }
             divClassName={"relative top-10"}
           ></SectionTitle>
@@ -32,13 +32,13 @@ const Skills = () => {
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
               </div>
             </div>
           </RevealAnimation>
@@ -48,13 +48,13 @@ const Skills = () => {
               <div className="flex gap-2 lg:gap-4">
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
               </div>
             </div>
@@ -66,13 +66,13 @@ const Skills = () => {
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full  lg:block hidden  bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full  lg:block hidden  bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full  lg:block hidden  bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full  lg:block hidden  bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
               </div>
             </div>
           </RevealAnimation>
@@ -83,12 +83,12 @@ const Skills = () => {
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
               </div>
             </div>
@@ -102,11 +102,11 @@ const Skills = () => {
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
               </div>
             </div>
@@ -119,11 +119,11 @@ const Skills = () => {
               <div className="flex gap-2 lg:gap-4">
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
@@ -136,11 +136,11 @@ const Skills = () => {
               <div className="flex gap-2 lg:gap-4">
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
@@ -154,11 +154,11 @@ const Skills = () => {
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
               </div>
@@ -170,11 +170,11 @@ const Skills = () => {
               <div className="flex gap-2 lg:gap-4">
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
@@ -187,11 +187,11 @@ const Skills = () => {
               <div className="flex gap-2 lg:gap-4">
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
                 <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-rose-500"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
-                <div className="w-5 h-5 rounded-full bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-rose-500"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
+                <div className="w-5 h-5 rounded-full lg:block hidden bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>
                 <div className="w-5 h-5 rounded-full bg-gray-700"></div>

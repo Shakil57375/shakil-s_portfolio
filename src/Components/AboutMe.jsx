@@ -22,10 +22,10 @@ const AboutMe = () => {
         titleFirstWord={"About"}
         titleSecondWord={"Me"}
         titleFirstClassName={
-          "text-8xl font-bold paddingX relative font-bold text-center z-40 font-Montserrat"
+          "lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat paddingX relative font-bold text-center z-40 font-Montserrat"
         }
         titleSecondWordClassName={
-          "text-8xl font-bold paddingX relative font-bold text-center z-40 font-Montserrat"
+          "lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat paddingX relative font-bold text-center z-40 font-Montserrat"
         }
       ></SectionTitle>
       <div className="flex z-40 lg:flex-row flex-col-reverse items-start justify-between paddingY paddingX h-fit  w-full gap-48 relative">

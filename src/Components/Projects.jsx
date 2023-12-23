@@ -27,9 +27,9 @@ const Projects = () => {
       <div>
         <SectionTitle
           titleFirstWord={"My Projects"}
-          titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
+          titleFirstClassName={"lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat text-white"}
           divClassName={
-            "relative lg:top-10 top-0 lg:left-28 left-0 text-center flex justify-center "
+            "relative lg:top-10 top-0 lg:left-28 left-0 text-center flex justify-center"
           }
         ></SectionTitle>
         <GradientBackground
@@ -159,7 +159,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <main ref={container} className="relative lg:mt-32 mt-12 ">
+      <main ref={container} className="relative mt-32 ">
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;
           return (

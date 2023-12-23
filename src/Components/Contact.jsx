@@ -72,7 +72,7 @@ const Contact = () => {
     >
       <SectionTitle
         titleFirstWord={"Contact Me"}
-        titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
+        titleFirstClassName={"lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat"}
         divClassName={"left-28 flex justify-center "}
       ></SectionTitle>
       <GradientBackground

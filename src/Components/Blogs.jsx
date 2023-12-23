@@ -26,7 +26,7 @@ const Blogs = () => {
       <div className="flex items-start justify-between ">
         <SectionTitle
           titleFirstWord={"My Blogs"}
-          titleFirstClassName={"text-8xl text-white font-bold font-Montserrat"}
+          titleFirstClassName={"text-8xl text-white font-bold font-Montserrat mt-12 lg:mt-0"}
           divClassName={"left-28 flex justify-start text-center "}
         ></SectionTitle>
         <FaXmark className="text-8xl text-white lg:block hidden" />

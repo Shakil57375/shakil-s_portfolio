@@ -1,4 +1,4 @@
-import RevealAnimation from "./RevealAnimation";
+import RevealAnimation from "./Animation/RevealAnimation";
 
 /* eslint-disable react/prop-types */
 const Button = ({ children, id }) => {

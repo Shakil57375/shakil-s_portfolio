@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react-hooks/exhaustive-deps */
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";

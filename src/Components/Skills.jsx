@@ -1,7 +1,7 @@
 import SectionTitle from "../Utils/SectionTitle";
 import Arrow from "./Arrow";
 import GradientBackground from "./GradientBackground";
-import RevealAnimation from "./RevealAnimation";
+import RevealAnimation from "./Animation/RevealAnimation";
 const Skills = () => {
   return (
     <div id="skills" className="paddingX paddingY relative h-fit pb-12">

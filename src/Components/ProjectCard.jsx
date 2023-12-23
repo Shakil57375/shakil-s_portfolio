@@ -3,7 +3,7 @@ import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import "./ProjectCard.css";
 import { FaEye, FaGithub } from "react-icons/fa";
-import RevealAnimation from "./RevealAnimation";
+import RevealAnimation from "./Animation/RevealAnimation";
 const ProjectCard = ({
   i,
   title,

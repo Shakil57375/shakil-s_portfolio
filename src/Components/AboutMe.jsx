@@ -6,7 +6,8 @@ import { useState } from "react";
 import SectionTitle from "../Utils/SectionTitle";
 import GradientBackground from "./GradientBackground";
 import Button from "./Button";
-import RevealAnimation from "./RevealAnimation";
+import RevealAnimation from "./Animation/RevealAnimation";
+import AnimateRight from "./Animation/AnimateRight";
 const AboutMe = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
@@ -27,9 +28,15 @@ const AboutMe = () => {
           <GradientBackground
             className={`absolute top-80 left-4 bg-blue-800 blur-3xl w-96 h-80 opacity-40 `}
           />
-          <div className="relative z-30 ">
-            <img className="about__image" src={aboutImage} alt="About Shakil" />
-          </div>
+          <AnimateRight>
+            <div className="relative z-30 ">
+              <img
+                className="about__image"
+                src={aboutImage}
+                alt="About Shakil"
+              />
+            </div>
+          </AnimateRight>
           <div className="relative -top-[470px] right-8 z-10  about_bg_shape"></div>
         </div>
         <div className=" lg:p-0 text-white relative">

@@ -9,7 +9,7 @@ import { FaDownload } from "react-icons/fa6";
 import { FaLongArrowAltDown } from "react-icons/fa";
 import GradientBackground from "./GradientBackground";
 import Social from "./Social";
-import RevealAnimation from "./RevealAnimation";
+import RevealAnimation from "./Animation/RevealAnimation";
 const Banner = () => {
   return (
     <div id="home" className="header flex items-center justify-between !z-10">

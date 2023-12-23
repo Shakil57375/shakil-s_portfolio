@@ -8,7 +8,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import Swal from "sweetalert2";
 import "./Contact.css";
 import GradientBackground from "./GradientBackground";
-import RevealAnimation from "./RevealAnimation";
+import RevealAnimation from "./Animation/RevealAnimation";
 const Contact = () => {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);

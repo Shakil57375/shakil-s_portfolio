@@ -1,4 +1,4 @@
-import RevealAnimation from "../Components/RevealAnimation";
+import RevealAnimation from "../Components/Animation/RevealAnimation";
 
 /* eslint-disable react/prop-types */
 const SectionTitle = ({

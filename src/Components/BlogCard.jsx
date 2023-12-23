@@ -1,5 +1,5 @@
 import { useState } from "react";
-import RevealAnimation from "./RevealAnimation";
+import RevealAnimation from "./Animation/RevealAnimation";
 /* eslint-disable react/prop-types */
 const BlogCard = ({ id, title, description, image }) => {
   const [expandedDescriptions, setExpandedDescriptions] = useState({});

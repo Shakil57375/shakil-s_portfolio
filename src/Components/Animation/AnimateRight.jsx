@@ -2,7 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
-const AnimateRight = ({ children }) => {
+const AnimateLeft = ({ children }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -31,4 +31,4 @@ const AnimateRight = ({ children }) => {
   );
 };
 
-export default AnimateRight;
+export default AnimateLeft;

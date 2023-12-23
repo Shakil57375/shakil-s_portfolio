@@ -2,14 +2,19 @@ import "./aboutMe.css";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import aboutImage from "../../src/assets/shakil_about_image.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SectionTitle from "../Utils/SectionTitle";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import GradientBackground from "./GradientBackground";
 import Button from "./Button";
 import RevealAnimation from "./Animation/RevealAnimation";
-import AnimateRight from "./Animation/AnimateRight";
+import AnimateLeft from "./Animation/AnimateRight";
 const AboutMe = () => {
   const [counterOn, setCounterOn] = useState(false);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section id="about" className="bg-black z-40 relative">
       <SectionTitle
@@ -28,7 +33,7 @@ const AboutMe = () => {
           <GradientBackground
             className={`absolute top-80 left-4 bg-blue-800 blur-3xl w-96 h-80 opacity-40 `}
           />
-          <AnimateRight>
+          <AnimateLeft>
             <div className="relative z-30 ">
               <img
                 className="about__image"
@@ -36,8 +41,8 @@ const AboutMe = () => {
                 alt="About Shakil"
               />
             </div>
-          </AnimateRight>
-          <div className="relative -top-[470px] right-8 z-10  about_bg_shape"></div>
+          </AnimateLeft>
+          <div data-aos="zoom-in-up" className="relative -top-[470px] right-8 z-10  about_bg_shape"></div>
         </div>
         <div className=" lg:p-0 text-white relative">
           <div>

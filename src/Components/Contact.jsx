@@ -8,6 +8,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import Swal from "sweetalert2";
 import "./Contact.css";
 import GradientBackground from "./GradientBackground";
+import RevealAnimation from "./RevealAnimation";
 const Contact = () => {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
@@ -82,28 +83,39 @@ const Contact = () => {
       />
       <div className="flex lg:flex-row flex-col justify-between items-start mt-12 gap-10 lg:px-0 px-2">
         <div className="basis-full lg:basis-1/2 space-y-12">
-          <p className="text-3xl font-Poppins font-semibold">
-            Drop me a Message
-          </p>
-          <p className="my-6 text-sm font-Poppins leading-7">
-            As a passionate front-end developer, I thrive on turning ideas into
-            visually stunning and interactive web experiences. Whether you have
-            a project in mind, need help solving a coding challenge, or just
-            want to chat about the latest web technologies, I am here for you!
-          </p>
+          <RevealAnimation>
+            <p className="text-3xl font-Poppins font-semibold">
+              Drop me a Message
+            </p>
+          </RevealAnimation>
+          <RevealAnimation>
+            <p className="my-6 text-sm font-Poppins leading-7">
+              As a passionate front-end developer, I thrive on turning ideas
+              into visually stunning and interactive web experiences. Whether
+              you have a project in mind, need help solving a coding challenge,
+              or just want to chat about the latest web technologies, I am here
+              for you!
+            </p>
+          </RevealAnimation>
           <div className="space-y-7">
-            <div className="flex items-center gap-4">
-              <FiPhone className="text-3xl" />
-              <p className="text-2xl ">+880 1814265294</p>
-            </div>
-            <div className="flex items-center gap-4">
-              <HiOutlineMailOpen className="text-3xl" />
-              <p className="text-2xl ">shakil57375@gmail.com</p>
-            </div>
-            <div className="flex items-center gap-4">
-              <IoLocationOutline className="text-3xl" />
-              <p className="text-2xl ">Barura, Cumilla, Bangladesh</p>
-            </div>
+            <RevealAnimation>
+              <div className="flex items-center gap-4">
+                <FiPhone className="text-3xl" />
+                <p className="text-2xl ">+880 1814265294</p>
+              </div>
+            </RevealAnimation>
+            <RevealAnimation>
+              <div className="flex items-center gap-4">
+                <HiOutlineMailOpen className="text-3xl" />
+                <p className="text-2xl ">shakil57375@gmail.com</p>
+              </div>
+            </RevealAnimation>
+            <RevealAnimation>
+              <div className="flex items-center gap-4">
+                <IoLocationOutline className="text-3xl" />
+                <p className="text-2xl ">Barura, Cumilla, Bangladesh</p>
+              </div>
+            </RevealAnimation>
           </div>
         </div>
         <div className="basis-full lg:basis-1/2">
@@ -114,9 +126,11 @@ const Contact = () => {
               className="flex flex-col gap-4"
             >
               <label className="flex flex-col">
-                <span className="  text-xl text-white font-medium mb-4">
-                  Your Name *
-                </span>
+                <RevealAnimation>
+                  <span className="  text-xl text-white font-medium mb-4">
+                    Your Name *
+                  </span>
+                </RevealAnimation>
                 <input
                   type="text"
                   required
@@ -128,9 +142,11 @@ const Contact = () => {
                 />
               </label>
               <label className="flex flex-col">
-                <span className="  text-xl text-white font-medium mb-4">
-                  Your email *
-                </span>
+                <RevealAnimation>
+                  <span className="  text-xl text-white font-medium mb-4">
+                    Your email *
+                  </span>
+                </RevealAnimation>
                 <input
                   type="email"
                   required
@@ -142,9 +158,11 @@ const Contact = () => {
                 />
               </label>
               <label className="flex flex-col">
-                <span className=" text-xl text-white font-medium mb-4">
-                  Your Message *
-                </span>
+                <RevealAnimation>
+                  <span className=" text-xl text-white font-medium mb-4">
+                    Your Message *
+                  </span>
+                </RevealAnimation>
                 <textarea
                   rows={7}
                   name="message"

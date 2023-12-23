@@ -27,6 +27,7 @@ const ProjectCard = ({
   const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
 
+
   return (
     <div ref={container} className="cardContainer text-white">
       <motion.div
@@ -69,7 +70,10 @@ const ProjectCard = ({
           </div>
           <div className="imageContainer">
             <motion.div className="screen" style={{ scale: imageScale }}>
-              <img src={src} alt="image" />
+              <img
+                src={src}
+                alt="image"
+              />
             </motion.div>
           </div>
         </div>

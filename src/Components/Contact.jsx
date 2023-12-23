@@ -1,8 +1,10 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import SectionTitle from "../Utils/SectionTitle";
 import { useState } from "react";
 import { FiPhone } from "react-icons/fi";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { IoLocationOutline } from "react-icons/io5";
 import Swal from "sweetalert2";
@@ -65,6 +67,9 @@ const Contact = () => {
         }
       );
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section
       id="contactMe"
@@ -72,7 +77,9 @@ const Contact = () => {
     >
       <SectionTitle
         titleFirstWord={"Contact Me"}
-        titleFirstClassName={"lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat"}
+        titleFirstClassName={
+          "lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat"
+        }
         divClassName={"left-28 flex justify-center "}
       ></SectionTitle>
       <GradientBackground
@@ -132,6 +139,7 @@ const Contact = () => {
                   </span>
                 </RevealAnimation>
                 <input
+                  data-aos="fade-up"
                   type="text"
                   required
                   name="name"
@@ -148,6 +156,7 @@ const Contact = () => {
                   </span>
                 </RevealAnimation>
                 <input
+                  data-aos="fade-up"
                   type="email"
                   required
                   name="email"
@@ -164,6 +173,7 @@ const Contact = () => {
                   </span>
                 </RevealAnimation>
                 <textarea
+                  data-aos="fade-up"
                   rows={7}
                   name="message"
                   required
@@ -173,12 +183,14 @@ const Contact = () => {
                   className=" py-4 px-6 placeholder:text-gray-400 border-none focus:border-none rounded-lg font-medium bg-[rgba(36,9,28,255)] outline-none focus:outline-none text-white lg:w-full w-96"
                 />
               </label>
-              <button
-                type="submit"
-                className="py-4 px-12 rounded-xl bg-fuchsia-600 text-white w-fit  font-bold shadow-lg mx-auto"
-              >
-                {loading ? "Sending..." : "Send"}
-              </button>
+              <RevealAnimation>
+                <button
+                  type="submit"
+                  className="py-4 px-12 rounded-xl bg-fuchsia-600 text-white w-fit  font-bold shadow-lg mx-auto"
+                >
+                  {loading ? "Sending..." : "Send"}
+                </button>
+              </RevealAnimation>
             </form>
           </div>
         </div>

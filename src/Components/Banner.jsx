@@ -9,6 +9,7 @@ import { FaDownload } from "react-icons/fa6";
 import { FaLongArrowAltDown } from "react-icons/fa";
 import GradientBackground from "./GradientBackground";
 import Social from "./Social";
+import RevealAnimation from "./RevealAnimation";
 const Banner = () => {
   return (
     <div id="home" className="header flex items-center justify-between !z-10">
@@ -31,21 +32,25 @@ const Banner = () => {
       <section className="text-white flex flex-col z-20 paddingX paddingY">
         <div className="flex flex-col lg:flex-row mt-24 items-center justify-between paddingX gap-0 lg:gap-10">
           <div className="flex flex-col  items-start">
-            <h1 className="font-semibold text-gray-500 text-3xl">
-              MERN-stack developer
-            </h1>
-            <p className="lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat mt-8 mb-1">
-              SHAKIL
-            </p>
-            <p className="lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat">
-              HOSSAIN
-            </p>
+            <RevealAnimation>
+              <h1 className="font-semibold text-gray-500 text-3xl">
+                MERN-stack developer
+              </h1>
+              <p className="lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat mt-8 mb-1">
+                SHAKIL
+              </p>
+              <p className="lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat">
+                HOSSAIN
+              </p>
+            </RevealAnimation>
             <div className="mt-10 flex flex-col lg:flex-row justify-between gap-4 lg:gap-40 items-start">
-              <div className=" border-r-0 border-t-0 border-b-0 border-l-1 pl-8 py-2 border text-xl font-semibold text-gray-500">
-                <p>I am MERN-stack</p>
-                <p>developer work remotely</p>
-                <p>from Bangladesh</p>
-              </div>
+              <RevealAnimation>
+                <div className=" border-r-0 border-t-0 border-b-0 border-l-1 pl-8 py-2 border text-xl font-semibold text-gray-500">
+                  <p>I am MERN-stack</p>
+                  <p>developer work remotely</p>
+                  <p>from Bangladesh</p>
+                </div>
+              </RevealAnimation>
               <div className="lg:my-5 my-2 text-white relative lg:left-0 left-28">
                 <a
                   href={CV}

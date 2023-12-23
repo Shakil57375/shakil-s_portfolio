@@ -1,3 +1,5 @@
+import RevealAnimation from "../Components/RevealAnimation";
+
 /* eslint-disable react/prop-types */
 const SectionTitle = ({
   titleFirstWord,
@@ -8,8 +10,10 @@ const SectionTitle = ({
 }) => {
   return (
     <div className={`${divClassName}`}>
-      <h1 className={`${titleFirstClassName}`}>{titleFirstWord}</h1>
-      <h1 className={`${titleSecondWordClassName}`}>{titleSecondWord}</h1>
+      <RevealAnimation>
+        <h1 className={`${titleFirstClassName}`}>{titleFirstWord}</h1>
+        <h1 className={`${titleSecondWordClassName}`}>{titleSecondWord}</h1>
+      </RevealAnimation>
     </div>
   );
 };

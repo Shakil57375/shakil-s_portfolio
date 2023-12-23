@@ -18,14 +18,14 @@ const AboutMe = () => {
   return (
     <section id="about" className="bg-black z-40 relative">
       <SectionTitle
-        divClassName={`flex flex-col relative lg:top-44 top-0 lg:right-48 right-0 text-white justify-start items-center z-50`}
+        divClassName={`flex flex-col relative lg:top-44 top-0 lg:right-48 right-0 text-white justify-start items-center z-50 `}
         titleFirstWord={"About"}
         titleSecondWord={"Me"}
         titleFirstClassName={
-          "lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat paddingX relative font-bold text-center z-40 font-Montserrat"
+          "lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat paddingX relative font-bold text-center z-40 font-Montserrat mt-10 lg:mt-0"
         }
         titleSecondWordClassName={
-          "lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat paddingX relative font-bold text-center z-40 font-Montserrat"
+          "lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat paddingX relative font-bold text-center z-40 font-Montserrat mb-10 lg:mb-0"
         }
       ></SectionTitle>
       <div className="flex z-40 lg:flex-row flex-col-reverse items-start justify-between paddingY paddingX h-fit  w-full gap-48 relative">

@@ -27,7 +27,7 @@ const Projects = () => {
       <div>
         <SectionTitle
           titleFirstWord={"My Projects"}
-          titleFirstClassName={"lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat text-white"}
+          titleFirstClassName={"lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat text-white my-10 lg:my-0"}
           divClassName={
             "relative lg:top-10 top-0 lg:left-28 left-0 text-center flex justify-center"
           }

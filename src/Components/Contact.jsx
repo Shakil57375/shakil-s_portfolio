@@ -78,7 +78,7 @@ const Contact = () => {
       <SectionTitle
         titleFirstWord={"Contact Me"}
         titleFirstClassName={
-          "lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat"
+          "lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat mt-10 lg:mt-0"
         }
         divClassName={"left-28 flex justify-center "}
       ></SectionTitle>
@@ -89,7 +89,7 @@ const Contact = () => {
         className={`absolute top-60 left-0 bg-rose-700 blur-[120px] w-96 h-80 opacity-40`}
       />
       <div className="flex lg:flex-row flex-col justify-between items-start mt-12 gap-10 lg:px-0 px-2">
-        <div className="basis-full lg:basis-1/2 space-y-12">
+        <div className="basis-full lg:basis-1/2 space-y-10">
           <RevealAnimation>
             <p className="text-3xl font-Poppins font-semibold">
               Drop me a Message

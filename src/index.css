@@ -7,7 +7,7 @@ body{
 }
 
 .paddingX {
-   @apply lg:px-28 px-0
+   @apply lg:px-28 px-1
 }
 .paddingY{
    @apply lg:py-10 py-0

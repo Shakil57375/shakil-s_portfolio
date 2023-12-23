@@ -6,11 +6,17 @@ import { MdOutlineHorizontalRule } from "react-icons/md";
 import "./banner.css";
 import { ImCross } from "react-icons/im";
 import { FaDownload } from "react-icons/fa6";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FaLongArrowAltDown } from "react-icons/fa";
 import GradientBackground from "./GradientBackground";
 import Social from "./Social";
 import RevealAnimation from "./Animation/RevealAnimation";
+import { useEffect } from "react";
 const Banner = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div id="home" className="header flex items-center justify-between !z-10">
       <GradientBackground
@@ -53,6 +59,7 @@ const Banner = () => {
               </RevealAnimation>
               <div className="lg:my-5 my-2 text-white relative lg:left-0 left-28">
                 <a
+                  data-aos="fade-up"
                   href={CV}
                   download
                   className="cursor-pointer bg-pink-700 flex flex-col py-1 lg:py-4 lg:px-8 px-5 pulse-anim play-icon items-center gap-1"
@@ -63,7 +70,7 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="relative lg:left-28 left-10">
+          <div className="relative lg:left-28 left-10 " data-aos="fade-up">
             <ImCross className="text-3xl lg:block hidden" />
             <div className="box relative z-0 top-24 "></div>
             <img

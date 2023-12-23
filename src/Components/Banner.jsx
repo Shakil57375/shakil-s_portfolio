@@ -70,7 +70,12 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="relative lg:left-28 left-10 " data-aos="fade-up">
+          <div
+            className="relative lg:left-28 left-10 "
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="linear"
+          >
             <ImCross className="text-3xl lg:block hidden" />
             <div className="box relative z-0 top-24 "></div>
             <img

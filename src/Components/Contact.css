@@ -1,0 +1,8 @@
+@media only screen and (max-width: 400px) {
+    input {
+        width: 350px !important;
+    }
+    textarea {
+        width: 350px !important;
+    }
+  }

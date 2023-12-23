@@ -71,9 +71,9 @@ const Contact = () => {
     AOS.init();
   }, []);
   return (
-    <section
-      id="contactMe"
-      className="h-fit  paddingY paddingX text-white relative"
+    <div
+      id="directContact"
+      className="h-fit paddingY paddingX text-white relative"
     >
       <SectionTitle
         titleFirstWord={"Contact Me"}
@@ -195,7 +195,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

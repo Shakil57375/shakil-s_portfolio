@@ -13,7 +13,7 @@ const FloatingNav = () => {
   
   return (
       <nav  className="navbar gap-5 fixed paddingX !z-50 top-2 h-16 lg:w-11/12 w-fit !py-10">
-        <div id="contactMe" className="navbar-start !z-50 lg:block hidden">
+        <div id="home" className="navbar-start !z-50 lg:block hidden">
             <img
               src="https://i.ibb.co/9nSc8zm/shakil-s-logo.png"
               alt="logo"
@@ -73,18 +73,18 @@ const FloatingNav = () => {
             <FaBlog />
           </Link>
           <Link
-            to="contactMe"
+            to="directContact"
             spy={true}
             smooth={true}
             duration={500}
-            className={activeNav === "contactMe" ? "active" : ""}
-            onClick={() => setActiveNav("contactMe")}
+            className={activeNav === "directContact" ? "active" : ""}
+            onClick={() => setActiveNav("directContact")}
           >
             <MdConnectWithoutContact />
           </Link>
         </div>
         <div className="navbar-end gap-5 lg:flex hidden">
-          <Button id={"contactMe"}>Let's Talk</Button>
+          <Button targetId="directContact" >Let's Talk</Button>
         </div>
       </nav>
   );

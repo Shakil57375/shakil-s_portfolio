@@ -42,7 +42,10 @@ const AboutMe = () => {
               />
             </div>
           </AnimateLeft>
-          <div data-aos="zoom-in-up" className="relative -top-[470px] right-8 z-10  about_bg_shape"></div>
+          <div
+            data-aos="zoom-in-up"
+            className="relative -top-[470px] right-8 z-10  about_bg_shape"
+          ></div>
         </div>
         <div className=" lg:p-0 text-white relative">
           <div>
@@ -112,7 +115,7 @@ const AboutMe = () => {
               </RevealAnimation>
             </ScrollTrigger>
             <div className="flex items-center justify-between mt-10">
-              <Button>Talk with me!</Button>
+              <Button targetId="directContact">Talk with me!</Button>
               <RevealAnimation>
                 <div className="flex flex-col gap-4 ">
                   <div className="flex gap-4">

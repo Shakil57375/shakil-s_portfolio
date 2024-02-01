@@ -35,7 +35,7 @@ const Banner = () => {
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
       </div>
-      <section className="text-white flex flex-col z-20 paddingX paddingY">
+      <section id="home" className="text-white flex flex-col z-20 paddingX paddingY">
         <div className="flex flex-col lg:flex-row mt-24 items-center justify-between paddingX gap-0 lg:gap-10">
           <div className="flex flex-col  items-start">
             <RevealAnimation>

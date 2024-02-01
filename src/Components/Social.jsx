@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 const Social = () => {
   return (
-    <div className="flex flex-col mt-5 justify-center gap-3 z-40">
+    <div className="flex flex-col mt-5 justify-center gap-3 z-50">
       <span>
         <a
           href="https://www.linkedin.com/in/shakil-hossian-757817263/"

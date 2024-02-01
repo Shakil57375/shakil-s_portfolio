@@ -93,7 +93,7 @@ const Banner = () => {
           </div>
         </div>
       </section>
-      <div data-aos="flip-left" className="relative right-8 lg:flex lg:flex-col items-center">
+      <div data-aos="flip-left" className="relative right-8 lg:flex lg:flex-col items-center z-50">
         <FaLongArrowAltDown className="text-xl text-white animate-bounce h-6" />
         <Social />
       </div>

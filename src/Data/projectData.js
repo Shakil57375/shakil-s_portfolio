@@ -3,7 +3,7 @@ export const projects = [
     title: "The Universal News",
     workingMnt: "Sep-Oct 2023 (team project)",
     description:
-      "This is a recipe website featuring top-rated chefs and their recipes from Bangladesh. To access the best chefs' recipes, you'll need to log in. On a chef's details page, you'll find in-depth information about the chef and their recipes.",
+      " It’s a newspaper website and a one-stop solution for all your news needs. It is a team project, and I have contributed additional features to the website. I have added a podcast page, a TV series page, a game called Rock, Paper, Scissors, and a voice assistant that allows you to listen to the news instead of reading it.I cooperate with my teammates by discussing various thoughts and helping them in various ways.",
     src: "https://i.ibb.co/RSg1yQ6/The-Universal-News.png",
     technologies: "Next.js, Tailwind CSS, MongoDB, Stripe",
     link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",

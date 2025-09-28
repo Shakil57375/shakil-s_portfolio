@@ -1,7 +1,7 @@
 import "./aboutMe.css";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
-import aboutImage from "../../src/assets/shakil_about_image.jpg";
+import aboutImage from "../../src/assets/shakil_about_image.png";
 import { useEffect, useState } from "react";
 import SectionTitle from "../Utils/SectionTitle";
 import AOS from "aos";

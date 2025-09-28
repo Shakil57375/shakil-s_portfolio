@@ -35,7 +35,10 @@ const Banner = () => {
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
       </div>
-      <section id="home" className="text-white flex flex-col z-20 paddingX paddingY">
+      <section
+        id="home"
+        className="text-white flex flex-col z-20 paddingX paddingY"
+      >
         <div className="flex flex-col lg:flex-row mt-24 items-center justify-between paddingX gap-0 lg:gap-10">
           <div className="flex flex-col  items-start">
             <RevealAnimation>
@@ -71,7 +74,7 @@ const Banner = () => {
             </div>
           </div>
           <div
-            className="relative lg:left-28 left-10 "
+            className="relative lg:left-64 left-10 "
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-easing="linear"
@@ -79,8 +82,8 @@ const Banner = () => {
             <ImCross className="text-3xl lg:block hidden" />
             <div className="box relative z-0 top-24 "></div>
             <img
-              src="https://i.ibb.co/HrXCPtB/shakil-banner-image.png"
-              className=" z-0 absolute translate-x-10 -translate-y-3/4 top-3/4 lg:h-[650px] h-[350px] mt-8"
+              src="https://i.ibb.co.com/wh40mg6x/cropped-circle-image.png"
+              className=" z-0 absolute translate-x-0 -translate-y-3/4 top-[490px] lg:h-[600px] h-[350px] mt-8"
               alt=""
             />
           </div>
@@ -93,7 +96,10 @@ const Banner = () => {
           </div>
         </div>
       </section>
-      <div data-aos="flip-left" className="relative right-8 lg:flex lg:flex-col items-center z-50">
+      <div
+        data-aos="flip-left"
+        className="relative right-8 lg:flex lg:flex-col items-center z-50"
+      >
         <FaLongArrowAltDown className="text-xl text-white animate-bounce h-6" />
         <Social />
       </div>

@@ -1,161 +1,354 @@
-import "./aboutMe.css";
-import CountUp from "react-countup";
-import ScrollTrigger from "react-scroll-trigger";
-import aboutImage from "../../src/assets/shakil_about_image.png";
-import { useEffect, useState } from "react";
-import SectionTitle from "../Utils/SectionTitle";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import GradientBackground from "./GradientBackground";
-import Button from "./Button";
-import RevealAnimation from "./Animation/RevealAnimation";
-import AnimateLeft from "./Animation/AnimateRight";
+'use client';
+import about_img from '../assets/shakil_about_image.png';
+import { useEffect, useState, useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+import CountUp from 'react-countup';
+
 const AboutMe = () => {
   const [counterOn, setCounterOn] = useState(false);
-  useEffect(() => {
-    AOS.init();
-  }, []);
-  return (
-    <section id="about" className="bg-black z-40 relative">
-      <SectionTitle
-        divClassName={`flex flex-col relative lg:top-44 top-0 lg:right-48 right-0 text-white justify-start items-center z-50 `}
-        titleFirstWord={"About"}
-        titleSecondWord={"Me"}
-        titleFirstClassName={
-          "lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat paddingX relative font-bold text-center z-40 font-Montserrat mt-10 lg:mt-0"
-        }
-        titleSecondWordClassName={
-          "lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat paddingX relative font-bold text-center z-40 font-Montserrat mb-10 lg:mb-0"
-        }
-      ></SectionTitle>
-      <div className="flex z-40 lg:flex-row flex-col-reverse items-start justify-between paddingY paddingX h-fit  w-full gap-48 relative">
-        <div className=" z-30 lg:h-[700px] h-[500px]">
-          <GradientBackground
-            className={`absolute top-80 left-4 bg-blue-800 blur-3xl w-96 h-80 opacity-40 `}
-          />
-          <AnimateLeft>
-            <div className="relative z-30 ">
-              <img
-                className="about__image"
-                src={aboutImage}
-                alt="About Shakil"
-              />
-            </div>
-          </AnimateLeft>
-          <div
-            data-aos="zoom-in-up"
-            className="relative -top-[470px] right-8 z-10  about_bg_shape"
-          ></div>
-        </div>
-        <div className=" lg:p-0 text-white relative">
-          <div>
-            <RevealAnimation>
-              <p className="text-sm font-mono mt-3 px-3">
-                I am an expert in Html, CSS, Javascript, Es6, react.js,
-                bootstrap, react-bootstrap, tailwind css, and daisyUi. I am
-                comfortable with Mongodb, react hook form, express.js, and
-                Firebase authentication. I am familiar with node.js, JWT, and
-                dev tool debugging. I can also use tools like GitHub, visual
-                studio code, vercel, and Figma as well. I am a Passionate and
-                dedicated Front-End-Developer with a deep understanding of
-                modern web technologies and a commitment to creating exceptional
-                user experiences.
-              </p>
-            </RevealAnimation>
-          </div>
-          <div>
-            <GradientBackground
-              className={
-                "absolute -top-60 right-40 bg-violet-600 blur-[150px] w-[400px] opacity-40 h-96 -skew-y-[45deg] "
-              }
-            />
-            <GradientBackground
-              className={
-                "absolute top-60 right-48 bg-rose-800 blur-[120px] w-[400px] opacity-80 h-40 "
-              }
-            />
+  const [isVisible, setIsVisible] = useState(false);
+  const statsRef = useRef(null);
+  const isStatsInView = useInView(statsRef, { threshold: 0.3 });
 
-            <ScrollTrigger
-              onEnter={() => setCounterOn(true)}
-              onExit={() => setCounterOn(false)}
+  useEffect(() => {
+    const timer = setTimeout(() => setIsVisible(true), 300);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    setCounterOn(isStatsInView);
+  }, [isStatsInView]);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: 'easeOut' },
+    },
+  };
+
+  const floatingVariants = {
+    animate: {
+      y: [-10, 10, -10],
+      transition: {
+        duration: 3,
+        repeat: Number.POSITIVE_INFINITY,
+        ease: 'easeInOut',
+      },
+    },
+  };
+
+  const skills = [
+    'HTML5',
+    'CSS3',
+    'JavaScript',
+    'React.js',
+    'Node.js',
+    'MongoDB',
+    'Express.js',
+    'Tailwind CSS',
+    'Bootstrap',
+    'Firebase',
+    'JWT',
+    'Git',
+  ];
+
+  const stats = [
+    {
+      number: 15,
+      label: 'Projects Completed',
+      color: 'from-blue-400 to-cyan-400',
+    },
+    { number: 8, label: 'Happy Clients', color: 'from-purple-400 to-pink-400' },
+    {
+      number: 2,
+      label: 'Years Experience',
+      color: 'from-green-400 to-emerald-400',
+    },
+  ];
+
+  return (
+    <section
+      id="about"
+      className="relative min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden"
+    >
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0">
+        <motion.div
+          className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl"
+          animate={{
+            scale: [1, 1.2, 1],
+            rotate: [0, 180, 360],
+          }}
+          transition={{
+            duration: 20,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: 'linear',
+          }}
+        />
+        <motion.div
+          className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-pink-500/20 to-orange-500/20 rounded-full blur-3xl"
+          animate={{
+            scale: [1.2, 1, 1.2],
+            rotate: [360, 180, 0],
+          }}
+          transition={{
+            duration: 25,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: 'linear',
+          }}
+        />
+        <motion.div
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl"
+          animate={{
+            scale: [1, 1.3, 1],
+          }}
+          transition={{
+            duration: 15,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: 'easeInOut',
+          }}
+        />
+      </div>
+
+      {/* Floating Particles */}
+      {[...Array(20)].map((_, i) => (
+        <motion.div
+          key={i}
+          className="absolute w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full opacity-30"
+          style={{
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+          }}
+          animate={{
+            y: [-20, 20, -20],
+            x: [-10, 10, -10],
+            opacity: [0.3, 0.8, 0.3],
+          }}
+          transition={{
+            duration: 3 + Math.random() * 2,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: 'easeInOut',
+            delay: Math.random() * 2,
+          }}
+        />
+      ))}
+
+      <div className="relative z-10 container mx-auto px-6 py-20">
+        {/* Section Title */}
+        <motion.div
+          className="text-center mb-20"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.h2
+            className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4"
+            animate={{
+              backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+            }}
+            transition={{
+              duration: 5,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: 'linear',
+            }}
+            style={{
+              backgroundSize: '200% 200%',
+            }}
+          >
+            About Me
+          </motion.h2>
+          <motion.div
+            className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"
+            initial={{ width: 0 }}
+            animate={{ width: 96 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          />
+        </motion.div>
+
+        <motion.div
+          className="grid lg:grid-cols-2 gap-16 items-center"
+          variants={containerVariants}
+          initial="hidden"
+          animate={isVisible ? 'visible' : 'hidden'}
+        >
+          {/* Image Section */}
+          <motion.div className="relative" variants={itemVariants}>
+            <motion.div
+              className="relative z-10"
+              variants={floatingVariants}
+              animate="animate"
             >
-              <RevealAnimation>
-                <div className="grid grid-cols-3 gap-5 mt-10">
-                  <div className="flex flex-col">
-                    <p className="text-cyan-500 text-7xl font-bold font-Marcellus">
-                      {counterOn && (
-                        <CountUp start={0} end={6} duration={2} delay={0} />
-                      )}
-                    </p>
-                    <p className="text-base font-medium">
-                      Front End Projects Completed
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-cyan-500 text-7xl font-bold font-Marcellus">
-                      {counterOn && (
-                        <CountUp start={0} end={4} duration={2} delay={0} />
-                      )}
-                    </p>
-                    <p className="text-base font-medium">
-                      Marne Stack Projects Completed
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-cyan-500 text-7xl font-bold font-Marcellus">
-                      {counterOn && (
-                        <CountUp start={0} end={3} duration={2} delay={0} />
-                      )}
-                    </p>
-                    <p className="text-base font-medium">
-                      Full Stack Project Completed
-                    </p>
-                  </div>
-                </div>
-              </RevealAnimation>
-            </ScrollTrigger>
-            <div className="flex items-center justify-between mt-10">
-              <Button targetId="directContact">Talk with me!</Button>
-              <RevealAnimation>
-                <div className="flex flex-col gap-4 ">
-                  <div className="flex gap-4">
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  </div>
-                  <div className="flex gap-4">
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  </div>
-                  <div className="flex gap-4">
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                  </div>
-                </div>
-              </RevealAnimation>
-            </div>
-          </div>
-        </div>
+              <div className="relative">
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl blur-xl opacity-30"
+                  animate={{
+                    scale: [1, 1.05, 1],
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Number.POSITIVE_INFINITY,
+                    ease: 'easeInOut',
+                  }}
+                />
+                <img
+                  src={about_img}
+                  alt="About Shakil"
+                  className="relative z-10 w-full max-w-md mx-auto rounded-3xl shadow-2xl border border-gray-700/50"
+                />
+              </div>
+            </motion.div>
+
+            {/* Decorative Elements */}
+            <motion.div
+              className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-r from-pink-500 to-orange-500 rounded-full opacity-20 blur-xl"
+              animate={{
+                scale: [1, 1.2, 1],
+                rotate: [0, 360],
+              }}
+              transition={{
+                duration: 8,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: 'linear',
+              }}
+            />
+            <motion.div
+              className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full opacity-20 blur-xl"
+              animate={{
+                scale: [1.2, 1, 1.2],
+                rotate: [360, 0],
+              }}
+              transition={{
+                duration: 10,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: 'linear',
+              }}
+            />
+          </motion.div>
+
+          {/* Content Section */}
+          <motion.div className="space-y-8" variants={itemVariants}>
+            <motion.div
+              className="relative p-8 rounded-2xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700/30"
+              whileHover={{
+                scale: 1.02,
+                boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
+              }}
+              transition={{ duration: 0.3 }}
+            >
+              <motion.p
+                className="text-gray-300 text-lg leading-relaxed"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.5 }}
+              >
+                I am a passionate{' '}
+                <span className="text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text font-semibold">
+                  Full-Stack Developer
+                </span>{' '}
+                with expertise in modern web technologies. I specialize in
+                creating exceptional user experiences with clean, efficient code
+                and innovative solutions.
+              </motion.p>
+            </motion.div>
+
+            {/* Skills Grid */}
+            <motion.div
+              className="grid grid-cols-3 md:grid-cols-4 gap-3"
+              variants={itemVariants}
+            >
+              {skills.map((skill, index) => (
+                <motion.div
+                  key={skill}
+                  className="px-3 py-2 bg-gradient-to-r from-gray-800/60 to-gray-700/60 rounded-lg text-center text-sm font-medium text-gray-300 border border-gray-600/30 backdrop-blur-sm"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  whileHover={{
+                    scale: 1.05,
+                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                    borderColor: 'rgba(59, 130, 246, 0.3)',
+                  }}
+                >
+                  {skill}
+                </motion.div>
+              ))}
+            </motion.div>
+
+            <motion.div
+              ref={statsRef}
+              className="grid grid-cols-3 gap-6"
+              variants={itemVariants}
+            >
+              {stats.map((stat, index) => (
+                <motion.div
+                  key={index}
+                  className="text-center p-6 rounded-xl bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-sm border border-gray-700/30"
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+                  }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <motion.div
+                    className={`text-4xl md:text-5xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent mb-2`}
+                    animate={{
+                      scale: counterOn ? [1, 1.1, 1] : 1,
+                    }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    {counterOn && (
+                      <CountUp
+                        start={0}
+                        end={stat.number}
+                        duration={2}
+                        delay={0}
+                      />
+                    )}
+                    +
+                  </motion.div>
+                  <p className="text-gray-400 text-sm font-medium">
+                    {stat.label}
+                  </p>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* CTA Button */}
+            <motion.div className="flex justify-center" variants={itemVariants}>
+              <motion.button
+                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() =>
+                  document
+                    .getElementById('contact')
+                    ?.scrollIntoView({ behavior: 'smooth' })
+                }
+              >
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  initial={false}
+                />
+                <span id="directContact" className="relative z-10">
+                  Let's Work Together!
+                </span>
+              </motion.button>
+            </motion.div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

@@ -93,7 +93,7 @@ const Contact = () => {
   );
 
   return (
-    <div
+    <section
       id="directContact"
       className="paddingX paddingY text-white relative min-h-screen"
     >
@@ -292,7 +292,7 @@ const Contact = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

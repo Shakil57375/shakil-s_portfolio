@@ -237,10 +237,9 @@ const Blogs = () => {
   return (
     <div id="blogs" className="paddingX paddingY relative z-30 min-h-screen">
       {/* Header section */}
-      <div className="flex items-start justify-between mb-8">
+      <div className="flex items-center justify-center mb-8">
         <SectionTitle
           title="My Blogs"
-          subtitle="Insights, tutorials, and thoughts on modern web development"
         />
         <motion.div
           initial={{ rotate: 0, scale: 0 }}
@@ -248,7 +247,7 @@ const Blogs = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           whileHover={{ rotate: 360, scale: 1.1 }}
         >
-          <FaXmark className="text-6xl lg:text-8xl text-white/20 lg:block hidden" />
+          <FaXmark className="text-6xl lg:text-8xl text-white/20 hidden lg:flex justify-end items-end " />
         </motion.div>
       </div>
 
@@ -260,7 +259,7 @@ const Blogs = () => {
 
       {/* Floating particles animation */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(6)].map((_, i) => (
+        {[...Array(8)].map((_, i) => (
           <motion.div
             key={i}
             className="absolute w-2 h-2 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full opacity-30"

@@ -18,7 +18,7 @@ const Banner = () => {
     AOS.init();
   }, []);
   return (
-    <div id="home" className="header flex items-center justify-between !z-10">
+    <div id="banner" className="header flex items-center justify-between !z-10">
       <GradientBackground
         className={`absolute top-10 right-0 bg-blue-800 blur-3xl w-96 h-80 opacity-40`}
       />
@@ -36,7 +36,7 @@ const Banner = () => {
         <MdOutlineHorizontalRule className="skew-y-[45deg] text-5xl text-pink-300" />
       </div>
       <section
-        id="home"
+        id="banner"
         className="text-white flex flex-col z-20 paddingX paddingY"
       >
         <div className="flex flex-col lg:flex-row mt-24 items-center justify-between paddingX gap-0 lg:gap-10">

@@ -73,7 +73,7 @@ const AboutMe = () => {
     },
     { number: 8, label: 'Happy Clients', color: 'from-purple-400 to-pink-400' },
     {
-      number: 2,
+      number: 1,
       label: 'Years Experience',
       color: 'from-green-400 to-emerald-400',
     },
@@ -342,7 +342,7 @@ const AboutMe = () => {
                   className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   initial={false}
                 />
-                <span id="directContact" className="relative z-10">
+                <span targetId="contact" className="relative z-10">
                   Let's Work Together!
                 </span>
               </motion.button>

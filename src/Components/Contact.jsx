@@ -94,7 +94,7 @@ const Contact = () => {
 
   return (
     <section
-      id="directContact"
+      id="contact"
       className="paddingX paddingY text-white relative min-h-screen"
     >
       <SectionTitle title="Contact Me" />

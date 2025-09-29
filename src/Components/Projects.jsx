@@ -161,7 +161,8 @@ const Projects = () => {
       </div>
       <main ref={container} className="relative mt-32 ">
         {projects.map((project, i) => {
-          const targetScale = 1 - (projects.length - i) * 0.05;
+          const targetScale = 1 - (projects.length - i) * 0.06;
+          if(i === 0) return <ProjectCard key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[0, 0.25]} targetScale={targetScale} />
           return (
             <ProjectCard
               key={`p_${i}`}

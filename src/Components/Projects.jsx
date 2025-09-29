@@ -26,15 +26,18 @@ const Projects = () => {
     <div id="projects" className="relative max-w-md lg:max-w-[1200px] mx-auto">
       <div>
         <SectionTitle
-          titleFirstWord={"My Projects"}
-          titleFirstClassName={"lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat text-white my-10 lg:my-0"}
+          titleFirstWord={'My Projects'}
+          titleFirstClassName={
+            'lg:text-8xl text-6xl font-bold lg:font-extrabold font-Montserrat text-white my-10 lg:my-0'
+          }
           divClassName={
-            "relative lg:top-10 top-0 lg:left-28 left-0 text-center flex justify-center"
+            'relative lg:top-10 top-0 lg:left-28 left-0 text-center flex justify-center'
           }
         ></SectionTitle>
+        <div className="w-24 h-2 bg-gradient-to-r from-purple-400 to-cyan-400 mx-auto rounded-full mt-16" />
         <GradientBackground
           className={
-            "absolute top-0 right-0 bg-blue-600 blur-[120px] w-[400px] opacity-80 h-40"
+            'absolute top-0 right-0 bg-blue-600 blur-[120px] w-[400px] opacity-80 h-40'
           }
         />
         <ImCross className="text-6xl absolute top-40 right-56 text-white hidden lg:block" />
@@ -162,7 +165,17 @@ const Projects = () => {
       <main ref={container} className="relative mt-32 ">
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.06;
-          if(i === 0) return <ProjectCard key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[0, 0.25]} targetScale={targetScale} />
+          if (i === 0)
+            return (
+              <ProjectCard
+                key={`p_${i}`}
+                i={i}
+                {...project}
+                progress={scrollYProgress}
+                range={[0, 0.25]}
+                targetScale={targetScale}
+              />
+            );
           return (
             <ProjectCard
               key={`p_${i}`}

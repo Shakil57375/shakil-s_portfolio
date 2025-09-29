@@ -24,6 +24,8 @@ const ProjectCard = ({
     offset: ["start end", "start start"],
   });
 
+  console.log(github)
+
   const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
 
@@ -62,9 +64,12 @@ const ProjectCard = ({
                 <a target="_blank" href={liveLink} rel="noreferrer">
                   <FaEye className=" w-8 h-8 " />
                 </a>
-                <a target="_blank" rel="noreferrer" href={github}>
-                  <FaGithub className="w-8 h-8" />
-                </a>
+                {
+                  github &&
+                  <a target="_blank" href={github} rel="noreferrer">
+                    <FaGithub className=" w-8 h-8 " />
+                  </a>
+                }
               </div>
             </RevealAnimation>
           </div>

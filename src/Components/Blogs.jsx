@@ -14,7 +14,6 @@ import blogs from '../Data/BlogsData';
 
 // Sample blog data with actual generated images and full content
 
-
 // Enhanced Blog Card Component with Read More functionality
 const BlogCard = ({ blog, index }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -185,7 +184,7 @@ const SectionTitle = ({ title, subtitle }) => {
       initial={{ opacity: 0, y: -30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
-      className="text-center mb-16"
+      className="text-center mb-4"
     >
       <motion.h2
         className="text-6xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-pink-200 to-purple-200 font-Montserrat mb-4"
@@ -237,17 +236,15 @@ const Blogs = () => {
   return (
     <div id="blogs" className="paddingX paddingY relative z-30 min-h-screen">
       {/* Header section */}
-      <div className="flex items-center justify-center mb-8">
-        <SectionTitle
-          title="My Blogs"
-        />
+      <div className="flex flex-col items-center justify-center">
+        <SectionTitle title="My Blogs" />
         <motion.div
           initial={{ rotate: 0, scale: 0 }}
           animate={{ rotate: 180, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           whileHover={{ rotate: 360, scale: 1.1 }}
         >
-          <FaXmark className="text-6xl lg:text-8xl text-white/20 hidden lg:flex justify-end items-end " />
+          <div className="w-24 h-2 bg-gradient-to-r from-purple-400 to-cyan-400 mx-auto rounded-full" />
         </motion.div>
       </div>
 

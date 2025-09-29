@@ -256,7 +256,7 @@ const AboutMe = () => {
               >
                 I am a passionate{' '}
                 <span className="text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text font-semibold">
-                  Full-Stack Developer
+                  MERN-Stack Developer
                 </span>{' '}
                 with expertise in modern web technologies. I specialize in
                 creating exceptional user experiences with clean, efficient code
